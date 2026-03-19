@@ -26,7 +26,7 @@
             z-index: 10;
         }
         #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container{
-            left: 400px;
+            left: 300px;
             top: 70px;
         }
 
@@ -52,9 +52,7 @@
         }
         .page-top-info-title{
                 position: absolute;
-                    float: left;
                     display: inline-block;
-                    width: 65%;
                     white-space: nowrap;
                     overflow: hidden !important;
                     text-overflow: ellipsis;
@@ -297,9 +295,7 @@
         }
         .page-top-info-title{
             position: absolute;
-                float: left;
                 display: inline-block;
-                width: 65%;
                 white-space: nowrap;
                 overflow: hidden !important;
                 text-overflow: ellipsis;
@@ -319,7 +315,7 @@
         }
         #vod-series-page-logo {
             position: absolute;
-            height: 80px;
+            height: 100px;
             left: 5%;
             top: 30%;
 
@@ -486,3 +482,9 @@
     display: contents;
     text-align: center;
   }
+
+
+   #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container{
+            left: 320px !important;
+            top: 90px !important;
+        }

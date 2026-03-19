@@ -714,11 +714,11 @@
         width: 20%;
         display: inline-block;
         vertical-align: middle;
-        float: left;
+        /* float: left; */
     }
 
     .page-top-info-logo-container img {
-        height: 100px;
+        height: 150px;
     }
 
     .page-top-info-btns-container {
@@ -2167,7 +2167,7 @@
     }
 
     .top-info-logo img {
-        height: 120px;
+        height: 140px;
     }
 
     .top-info-icon {
@@ -2224,11 +2224,11 @@
         width: 20%;
         display: inline-block;
         vertical-align: middle;
-        float: left;
+        /* float: left; */
     }
 
     .page-top-info-logo-container img {
-        height: 100px;
+        height: 150px;
     }
 
     .page-top-info-btns-container {
@@ -3042,6 +3042,7 @@
     top: 0;
     left: 0;
     width: 100vw;
+    animation: fadeInOut 0.5s ease-in-out;
     height: 100vh;
     background: rgba(0, 0, 0, 0.85);
     display: flex;
@@ -3053,7 +3054,7 @@
 .dns-custom-dialog-content {
     background: rgba(0, 0, 0, 0.7);
     padding: 40px;
-    zoom:0.9;
+    zoom: 0.9;
     width: 60%;
     border: 2px solid white;
     max-width: 1000px;
@@ -3113,3 +3114,74 @@
     padding: 10px 20px;
     border-radius: 20px;
 }
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#list-user-top-info-container {
+    vertical-align: middle;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    /* background-color: red !important; */
+}
+
+#list-user-page-title {
+    vertical-align: auto;
+    width: 100%;
+    /* background-color: blue !important; */
+}
+
+#home-logo img {
+ width: 50% !important;
+    object-fit: cover !important;
+    height: 40% !important;
+}
+
+#channel-page .top-info-logo img{
+    width: 60% !important;
+    object-fit: cover !important;
+    height: 100% !important;
+}
+
+#settings-page .top-info-logo img{
+    width: 70% !important;
+    object-fit: cover !important;
+    height: 40% !important;
+}
+#vod-series-page-logo{
+     width: 70% !important;
+    object-fit: cover !important;
+}
+
+#current-vod-series-name{
+        width: 50% !important;
+    top: 65px !important;
+    left: 500px !important;
+    width: 50% !important;
+    top: 65px !important;
+    left: 500px !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow-dots: ellipsis;
+}
+
+.series-top-menu-btn{
+        margin-top: 65px !important;
+}
+
+#series-top-info-container{
+    margin-bottom: 20px !important;
+}
+    .vod-series-fav-mark {
+    
+    top: 160px !important;}

@@ -1,44 +1,56 @@
 "use strict";
 
 var firebaseConfig = {
-  apiKey: "AIzaSyDK5uF-816i4_R9UlT0v5_BD12qu3rpF8E",
-  authDomain: "smarttvapp-5f8ca.firebaseapp.com",
-  projectId: "smarttvapp-5f8ca",
-  storageBucket: "smarttvapp-5f8ca.firebasestorage.app",
-  messagingSenderId: "430801978001",
-  appId: "1:430801978001:web:74d60528a2d1c37dfdb530",
-  measurementId: "G-3G73FDKF4B",
+  apiKey: "AIzaSyBqIZephdZVBx0265buqykch8dU5rFnJRs",
+  authDomain: "iptv-smarterpro-samsung.firebaseapp.com",
+  projectId: "iptv-smarterpro-samsung",
+  storageBucket: "iptv-smarterpro-samsung.firebasestorage.app",
+  messagingSenderId: "690473249153",
+  appId: "1:690473249153:web:1979e9b204564120b76080",
+  measurementId: "G-745FXSZP0H",
 };
 
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
-var db = firebase.firestore();
+var remoteConfig = firebase.remoteConfig();
+remoteConfig.settings.minimumFetchIntervalMillis = 15000;
 
 window.fetchConfigs = function () {
-  return db.collection("credentials").get()
-    .then(function (snapshot) {
-      if (snapshot.empty) {
-        console.log("No matching documents in credentials collection.");
-        return;
-      }
-      snapshot.forEach(function (doc) {
-        var data = doc.data();
-        console.log("Fetched credentials:", data);
-        
-        if (data.api_base_url) {
-          localStorage.setItem("base_Url", data.api_base_url);
-        }
-        if (data.show_qr !== undefined) {
-          localStorage.setItem("show_qr_code", data.show_qr);
-        }
-        if (data.whmcs_link) {
-          localStorage.setItem("whmcs_link", data.whmcs_link);
-        }
+  return remoteConfig
+    .fetchAndActivate() 
+    .then(function () {
+      var baseUrl = remoteConfig.getValue("Base_Url").asString();
+      var showQr = remoteConfig.getValue("show_qr").asBoolean();
+      var whmcsLink = remoteConfig.getValue("whmcs_link").asString();
+
+      console.log("Fetched credentials from Remote Config:", {
+        Base_Url: baseUrl,
+        show_qr: showQr,
+        whmcs_link: whmcsLink,
       });
+
+      if (baseUrl) {
+        localStorage.setItem("base_Url", baseUrl);
+        window.Base_Url = baseUrl;
+      }
+      if (showQr !== undefined) {
+        localStorage.setItem("show_qr_code", showQr);
+        window.show_qr_code = showQr;
+      }
+      if (whmcsLink) {
+        localStorage.setItem("whmcs_link", whmcsLink);
+        window.whmcs_link = whmcsLink;
+      }
+
+      return {
+        base_Url: baseUrl,
+        show_qr_code: showQr,
+        whmcs_link: whmcsLink,
+      };
     })
     .catch(function (error) {
-      console.error("Error getting credentials from Firestore: ", error);
+      console.error("Error fetching from Remote Config: ", error);
     });
 };
 

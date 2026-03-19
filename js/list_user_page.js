@@ -105,7 +105,7 @@ var list_user_page = {
                 onclick="list_user_page.goToAddUserPage()" \
             >\
                 <div class="empty-user-add-btn-icon">+</div>\
-                <div class="empty-user-add-btn-title">ADD NEW USER</div>\
+                <div class="empty-user-add-btn-title">ADD NEW PLAYLIST</div>\
             </div>';
     $("#list-user-items-container").html(html);
     this.menu_doms = $(".empty-user-add-btn-wrapper");
