@@ -1,0 +1,259 @@
+#settings-page {
+    position: relative;
+    padding: 20px 50px;
+}
+#settings-page .page-top-info-container{
+    padding:10px 20px;
+}
+#settings-page .top-info-logo img{
+    height: 80px;
+}
+#settings-page .top-info-date{
+
+}
+#setting-items-container{
+    font-size: 0;
+    margin-top: 100px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.setting-item-container{
+    padding:20px;
+    display: inline-block;
+    width: 25%;
+}
+.setting-item-wrapper{
+    background: #1B224E;
+    color: #fff;
+    font-size:28px;
+    /*border:3px solid transparent;*/
+    transition: all 0.1s;
+    padding:40px 20px;
+    text-align: center;
+    background-clip: padding-box;
+    position: relative;
+}
+.setting-item-wrapper.active{
+    /*border-color: #ffffff;*/
+    transform: scale(1.1);
+    background: transparent;
+    background-image: url('../images/setting_item_active.png');
+    background-size: 100% 100%;
+}
+/*.setting-item-active-img {*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    opacity: 0;*/
+/*    transition: opacity 0.1s;*/
+/*}*/
+/*.setting-item-wrapper.active .setting-item-active-img{*/
+/*    opacity: 1;*/
+/*}*/
+.setting-item-icon{
+    display: block;
+    margin:0 auto;
+    margin-bottom:20px;
+    height: 90px;
+}
+.setting-item-txt{
+    font-weight: normal;
+}
+
+#general-setting-modal .setting-option-items-wrapper-1{
+    /*width: 80%;*/
+    /*background: #efefef;*/
+    max-height: 800px;
+    overflow-y: scroll;
+    position: relative;
+}
+#general-setting-modal .setting-modal-body{
+    width:90%;
+}
+.setting-modal-span-1 {
+    margin-right: 10px;
+}
+.setting-sub-option-modal-1{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.setting-sub-option-modal-1-container{
+    width: 800px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    height: fit-content;
+    position: fixed;
+}
+.setting-sub-option-modal-title {
+    font-size: 35px;
+    color: #111;
+    padding: 0px 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.setting-option-items-wrapper-1{
+    /*position: fixed;*/
+    /*top:100px;*/
+    /*left: 50%;*/
+    /*transform:translateX(-50%);*/
+}
+.setting-option-item-type-1 {
+    font-size: 28px;
+    color: #222;
+    font-weight: bold;
+    padding: 20px;
+    border-bottom: 1px solid #888;
+    transition: all 0.1s;
+}
+.setting-option-item-type-1.active{
+    background:#eee;
+    /*color: #fff;*/
+}
+#epg-timeshift-modal .setting-option-items-wrapper-1{
+    width: 700px;
+    background: #efefef;
+    max-height: 800px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+#parent-account-modal-contents-container,#parent-account-modal-contents-container-confirm{
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#parent-account-modal-contents-container .setting-modal-contents-wrapper,#parent-account-modal-contents-container-confirm .setting-modal-contents-wrapper{
+    background: transparent;
+}
+.parent-account-modal-input-wrapper {
+    margin: 20px 0;
+}
+.parent-account-modal-input {
+    width: 100%;
+    outline: none !important;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size:32px;
+    background: #B8C3CF;
+    border: 3px solid transparent;
+}
+.parent-account-modal-input.active{
+    border:3px solid #333;
+}
+#parent-account-modal-header-text,#parent-account-modal-header-text-confirm {
+    color: #111;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#parent-account-modal-header-icon,#parent-account-modal-header-icon-confirm {
+    height: 40px;
+    margin-right: 10px;
+}
+#parent-account-modal-header,#parent-account-modal-header-confirm {
+    border-bottom: 4px solid #111;
+    padding: 15px 40px;
+}
+#parent-account-modal-contents-container .setting-modal-btns-container,#parent-account-modal-contents-container-confirm .setting-modal-btns-container{
+    margin-top: -40px;
+    white-space: nowrap;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#parent-account-modal-contents-container .setting-modal-btn{
+    width: 200px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#parent-account-modal-contents-container .setting-modal-body{
+    width: 600px;
+}
+
+.setting-modal-option{
+    padding: 1px 15px;
+    border: 10px solid transparent;
+    border-radius: 10px;
+    width: fit-content;
+}
+.setting-modal-option.active{
+    border-color: #fff;
+}
+.setting-modal-option label {
+    margin-bottom: 0 !important;
+}
+
+#speed-test-page{
+    background: #333;
+    pointer-events: none;
+}
+.setting-modal-col{
+    width: fit-content;
+    display: inline-block;
+    vertical-align: middle;
+}
+.setting-modal-option-pure-label{
+    margin-left:20px;
+    font-size: 33px;
+}
+#general-setting-modal .setting-modal-body{
+    position: relative;
+    transform:none;
+    height: 950px;
+    margin: 120px auto 0 auto;
+    overflow-y: hidden;
+    left:unset;
+    top:unset;
+}
+#general-setting-modal .setting-modal-contents-wrapper{
+    background:#181f31;
+}
+#confirm-clear-cache-modal .modal-body{
+    padding:50px;
+    text-align: center;
+}
+#confirm-clear-cache-modal-title {
+    color: #111;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#confirm-clear-cache-modal-text {
+    font-size: 28px;
+    color: #111;
+    margin-bottom: 20px;
+}
+.clear-cache-confirm-btn {
+    width: 200px;
+    color: #fff;
+    background: #111;
+    font-size: 25px;
+    font-weight: normal;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    padding:8px;
+}
+#confirm-clear-cache-modal-description {
+    font-size: 22px;
+    color: #da7117;
+    margin-top: -15px;
+    margin-bottom: 5px;
+}
+.setting-page-version{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    zoom: 1.2;
+    color: rgba(128, 128, 128, 0.524);
+}

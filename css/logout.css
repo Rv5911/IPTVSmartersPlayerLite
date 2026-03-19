@@ -1,0 +1,24 @@
+#logout-modal .modal-dialog{
+    width:550px;
+    min-width: unset;
+}
+#logout-modal-title-container {
+    font-size: 40px;
+    color: #000;
+    font-weight: bold;
+    padding: 15px 20px 20px 50px;
+    margin-top:15px;
+}
+#logout-modal-title-container img{
+    width: 30px;
+    margin-top: -10px;
+}
+#logout-modal-title-container span{
+    font-weight: bold;
+}
+
+.logout-btn{
+    width: 120px;
+
+}
+

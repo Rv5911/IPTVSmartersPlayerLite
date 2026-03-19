@@ -1,0 +1,488 @@
+  @media only screen and (max-width: 1680px){
+
+        #vod-series-page{
+            font-size: 0;
+        }
+        #vod-series-page-container-1 {
+            display: inline-block;
+            vertical-align: top;
+            width: 0;
+            background:#000;
+            transition: all 0.2s;
+            overflow: hidden;
+        }
+        #vod-series-page-container-1.expanded{
+            width: 30%;
+        }
+        #vod-series-page-container-1-content-wrapper{
+            width: 30vw;
+        }
+        #vod-series-collapse-icon-container {
+            color: #fff;
+            font-size: 30px;
+            position: fixed;
+            left:20px;
+            top:15px;
+            z-index: 10;
+        }
+        #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container{
+            left: 400px;
+            top: 70px;
+        }
+
+        .vod-series-collapse-icon {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 50px;
+            transition: all 0.03s;
+        }
+        .vod-series-collapse-icon.active{
+            background: #016273;
+        }
+        .vod-series-collapse-icon.collapse-icon{
+            display: none;
+        }
+        #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container .vod-series-collapse-icon.collapse-icon{
+            display: block;
+        }
+        #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container .vod-series-collapse-icon.expand-icon{
+            display: none;
+        }
+        .page-top-info-title{
+                position: absolute;
+                    float: left;
+                    display: inline-block;
+                    width: 65%;
+                    white-space: nowrap;
+                    overflow: hidden !important;
+                    text-overflow: ellipsis;
+                    text-align: center;
+         }
+
+        .page-top-info-btn {
+            height: 50px;
+        }
+        #vod-series-page-logo-container {
+            height: 200px;
+            position: relative;
+        }
+        #vod-series-page-logo-container {
+            height: 150px;
+            position: relative;
+        }
+        #vod-series-page-logo {
+            position: absolute;
+            height: 80px;
+            left: 5%;
+            top: 30%;
+
+        }
+        #vod-series-categories-container {
+            position: relative;
+            height: 490px;
+            overflow-y: scroll;
+        }
+
+        #vod-series-page-container-2 {
+            display: inline-block;
+            width: 100%;
+            vertical-align: top;
+            transition: all 0.2s;
+        }
+        #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container + #vod-series-page-container-2{
+            width: 70%;
+        }
+        #vod-series-page-container-2 .search-input-container{
+            left: 80px;
+        }
+        #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container + #vod-series-page-container-2 .search-input-container{
+            left:0;
+        }
+        #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container + #vod-series-page-container-2 .movie-item-container
+        {
+            width: 20%;
+        }
+
+        #vod-series-movies-container{
+            font-size:0;
+            position: relative;
+            height: 637px;
+            overflow-y: scroll;
+        }
+        .movie-item-container{
+            display: inline-block;
+            width: 14.285%;
+            vertical-align: middle;
+            padding:5px;
+            position: relative;
+        }
+        .movie-item-wrapper{
+            position:relative;
+            width: 100%;
+            height: 250px;
+            transition: all 0.1s;
+            border-radius: 10px;
+            overflow:hidden;
+            background: #222020;
+        }
+
+        .movie-grid-item-image{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left:0;
+        }
+        .movie-grid-item-name-container{
+            position: absolute;
+            bottom:0;
+            left:0;
+            width: 100%;
+        }
+         .movie-grid-item-name-container-cast{
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            width: 90%;
+            right: 0;
+            margin: 0 auto;
+        }
+        .movie-grid-item-name-wrapper{
+            position: relative;
+            height: 80px;
+            background: rgba(17, 17, 17, 0.7);
+            color: #fff;
+
+        }
+        .movie-grid-item-name-wrapper-cast{
+            position: relative;
+            height: 40px;
+            background: rgba(17, 17, 17, 0.7);
+            color: #fff;
+
+        }
+        .movie-grid-item-name-cast{
+            font-size: 16px;
+            text-align: center;
+            top: 25%;
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: normal !important;
+            padding:5px;
+        }
+        .movie-item-wrapper.active .movie-grid-item-name-wrapper{
+            background: #d38ae0;
+            color: #111;
+        }
+        .movie-item-rating {
+            position: absolute;
+            font-size: 18px;
+            color: #fff;
+            left: 5px;
+            top: 5px;
+            background: #1C86C7;
+            padding: 3px 10px;
+            border-radius: 10px !important;
+            min-width: 45px;
+            text-align: center;
+        }
+        .movie-grid-item-name{
+            font-size: 22px;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+             -webkit-transform: translateY(-50%);
+             -moz-transform: translateY(-50%);
+             -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: normal !important;
+            padding:0 0px;
+        }
+
+        .vod-series-fav-icon{
+            font-size: 45px;
+            color: #E74C3C;
+            position: absolute;
+            right: 20px;
+            top: 15px;
+        }
+        .vod-series-empty-movies-label {
+            font-size: 26px;
+            color: #eee;
+            font-weight: normal;
+            text-align: center;
+            margin-top: 100px;
+            white-space: normal;
+        }
+        #vod-series-page .search-input-activated .top-info-logo,
+        #vod-series-page .search-input-activated .top-info-date-container {
+            visibility: hidden;
+        }
+        #vod-series-page .search-input-activated .top-info-icons-container{
+            width: 100%;
+            margin-left:-66.66%;
+            text-align: left;
+        }
+        .movie-item-container.active{
+                background: white;
+                border-radius: 10px;
+        }
+  }
+
+
+
+
+
+
+  @media only screen and (min-width: 1680px){
+
+        #vod-series-page{
+            font-size: 0;
+        }
+        #vod-series-page-container-1 {
+            display: inline-block;
+            vertical-align: top;
+            width: 0;
+            background:#000;
+            transition: all 0.2s;
+            overflow: hidden;
+        }
+        #vod-series-page-container-1.expanded{
+            width: 25%;
+        }
+        #vod-series-page-container-1-content-wrapper{
+            width: 23vw;
+        }
+        #vod-series-collapse-icon-container {
+            color: #fff;
+            font-size: 30px;
+            position: fixed;
+            left:20px;
+            top:35px;
+            z-index: 10;
+        }
+        #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container{
+                    left: 470px;
+            top: 70px;
+        }
+
+        .vod-series-collapse-icon {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 50px;
+            transition: all 0.03s;
+        }
+        .vod-series-collapse-icon.active{
+            background: #016273;
+        }
+        .vod-series-collapse-icon.collapse-icon{
+            display: none;
+        }
+        #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container .vod-series-collapse-icon.collapse-icon{
+            display: block;
+        }
+        #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container .vod-series-collapse-icon.expand-icon{
+            display: none;
+        }
+        .page-top-info-title{
+            position: absolute;
+                float: left;
+                display: inline-block;
+                width: 65%;
+                white-space: nowrap;
+                overflow: hidden !important;
+                text-overflow: ellipsis;
+                text-align: center;
+        }
+
+        .page-top-info-btn {
+            height: 50px;
+        }
+        #vod-series-page-logo-container {
+            height: 200px;
+            position: relative;
+        }
+        #vod-series-page-logo-container {
+            height: 150px;
+            position: relative;
+        }
+        #vod-series-page-logo {
+            position: absolute;
+            height: 80px;
+            left: 5%;
+            top: 30%;
+
+        }
+        #vod-series-categories-container {
+            position: relative;
+            height: 870px;
+            overflow-y: scroll;
+        }
+
+        #vod-series-page-container-2 {
+            display: inline-block;
+            width: 100%;
+            vertical-align: top;
+            transition: all 0.2s;
+        }
+        #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container + #vod-series-page-container-2{
+            width: 75%;
+        }
+        #vod-series-page-container-2 .search-input-container{
+            left: 80px;
+        }
+        #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container + #vod-series-page-container-2 .search-input-container{
+            left:0;
+        }
+        #vod-series-page-container-1.expanded + #vod-series-collapse-icon-container + #vod-series-page-container-2 .movie-item-container
+        {
+            width: 20%;
+        }
+
+        #vod-series-movies-container{
+            font-size:0;
+            position: relative;
+            height: 890px;
+            overflow-y: scroll;
+        }
+        .movie-item-container{
+            display: inline-block;
+            width: 14.285%;
+            vertical-align: middle;
+            padding:5px;
+            position: relative;
+        }
+        .movie-item-wrapper{
+            position:relative;
+            width: 100%;
+            height: 300px;
+            transition: all 0.1s;
+            border-radius: 10px;
+            overflow:hidden;
+            background: #222020;
+        }
+
+        .movie-grid-item-image{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left:0;
+        }
+        .movie-grid-item-name-container{
+            position: absolute;
+            bottom:0;
+            left:0;
+            width: 100%;
+        }
+         .movie-grid-item-name-container-cast{
+                    position: absolute;
+                    bottom: 8px;
+                    left: 0;
+                    width: 90%;
+                    right: 0;
+                    margin: 0 auto;
+                }
+        .movie-grid-item-name-wrapper{
+            position: relative;
+            height: 80px;
+            background: rgba(17, 17, 17, 0.7);
+            color: #fff;
+
+        }
+        .movie-item-wrapper.active .movie-grid-item-name-wrapper{
+            background: #d38ae0;
+            color: #111;
+        }
+        .movie-item-rating {
+            position: absolute;
+            font-size: 20px;
+            color: #fff;
+            left: 20px;
+            top: 20px;
+            background: #1C86C7;
+            padding: 3px 10px;
+            border-radius: 10px !important;
+            min-width: 45px;
+            text-align: center;
+        }
+        .movie-grid-item-name{
+            font-size: 25px;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+                         -moz-transform: translateY(-50%);
+                         -ms-transform: translateY(-50%);
+                         -o-transform: translateY(-50%);
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: normal !important;
+            padding:0 20px;
+        }
+        .vod-series-fav-icon{
+            font-size: 45px;
+            color: #E74C3C;
+            position: absolute;
+            right: 20px;
+            top: 15px;
+        }
+        .vod-series-empty-movies-label {
+            font-size: 30px;
+            color: #eee;
+            font-weight: normal;
+            text-align: center;
+            margin-top: 100px;
+            white-space: normal;
+        }
+        #vod-series-page .search-input-activated .top-info-logo,
+        #vod-series-page .search-input-activated .top-info-date-container {
+            visibility: hidden;
+        }
+        #vod-series-page .search-input-activated .top-info-icons-container{
+            width: 100%;
+            margin-left:-66.66%;
+            text-align: left;
+        }
+          .movie-item-container.active{
+                        background: white;
+                        border-radius: 10px;
+                }
+
+        .movie-grid-item-name-wrapper-cast{
+                    position: relative;
+                    height: 50px;
+                    background: rgba(17, 17, 17, 0.7);
+                    color: #fff;
+
+                }
+                .movie-grid-item-name-cast{
+                    font-size: 16px;
+                    text-align: center;
+                    top: 25%;
+                    position: absolute;
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-weight: normal !important;
+                    padding:5px;
+                }
+  }
+
+.centerContentChildDiv{
+    display: contents;
+    text-align: center;
+  }

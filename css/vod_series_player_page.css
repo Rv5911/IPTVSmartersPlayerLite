@@ -1,0 +1,233 @@
+#vod-series-player-page .player-container{
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+#vod-series-player-page .player-container {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    background-size: 100% 100%;
+}
+#vod-series-video-controls-container {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    color: #fff;
+
+}
+#vod-series-progress-controls-container {
+    margin: 0 auto;
+    width: 100%;
+
+    background: rgb(0 0 0 / 70%);
+    padding: 15px 0px 10px 0px;
+}
+#vod-series-progress-container{
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+    padding-left:10px;
+    padding-right:10px;
+    width: 100%;
+}
+#vod-series-video-progressbar-container{
+    padding: 0;
+    margin: 0 10px;
+    display: inline-block;
+    width: 75%;
+    vertical-align: middle;
+}
+#vod-series-player-page .progress-amount {
+    background: #dd0000;
+    height: 100%;
+    display: block;
+    width: 0%;
+}
+#vod-series-video-time-container{
+    font-size: 0;
+    margin-top:15px;
+}
+.video-control-icon {
+    color: #888;
+    font-size: 50px;
+    display: inline-block;
+    width:33%;
+}
+
+.video-control-icon i{
+    width: 100px;
+    height: 100px;
+    border: 3px solid transparent;
+    display: inline-block;
+    line-height: 95px;
+    border-radius: 75px;
+}
+.video-control-icon.active i{
+    color: #fff;
+    /*border-color: #f77b05;*/
+    background: #4339bb;
+}
+#vod-series-player-page .video-time{
+    font-size:32px;
+    vertical-align: middle;
+    display: inline-block;
+    padding:0 0;
+    font-weight: normal;
+}
+
+.rangeslider--horizontal {
+    height: 7px !important;
+    background:#aaaaaa !important;
+}
+.rangeslider__handle{
+    background-image: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border:none !important;
+}
+.rangeslider .rangeslider__handle{
+    width: 40px;
+    height: 40px;
+    top: -17px !important;
+}
+.rangeslider__handle:after{
+    display: none !important;
+}
+.video-progress-bar-slider.active + .rangeslider .rangeslider__handle{
+    background: #7941e0;
+}
+
+.rangeslider__handle:after{
+    display: none;
+}
+
+#vod-video-info-container {
+    position: fixed;
+    top: 5vh;
+    left: 20vw;
+    width: 60vw;
+    height: 90vh;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 30px #68696f;
+    background: #efefef;
+    color: #222;
+    padding:20px;
+    display: none;
+}
+.video-info-title-1 {
+    font-size: 45px;
+}
+.video-info-title-2 {
+    font-size: 40px;
+}
+.video-info-item {
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+.video-info-item span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.video-info-label {
+    width: 130px;
+}
+
+#video-resume-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #171616e0;
+    display: none;
+}
+#video-resume-content {
+    position: fixed;
+    font-size: 20px;
+    left: 50%;
+    top: 50%;
+    padding: 20px 0px;
+    width: 800px;
+    background: #fff;
+    border-radius: 5px;
+    color: #111;
+    transform: translate(-50%, -50%);
+}
+
+#vod-resume-title-1 {
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 2px solid;
+}
+#vod-resume-title-1 span {
+    display: inline-block;
+    vertical-align: middle;
+}
+#resume-video-icon{
+    margin-bottom:5px;
+}
+#vod-resume-title-2 {
+    font-size: 26px;
+    margin: 20px auto;
+}
+#vod-resume-time{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#resume-buttons-container {
+    font-size: 0;
+    margin-top:30px;
+}
+.resume-button-wrapper {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    padding:0 20px;
+}
+.resume-action-btn {
+    font-size: 25px;
+    color: #fff;
+    background: #111;
+    font-weight: bold;
+    padding: 10px;
+    width: 250px !important;
+    border: 2px solid transparent;
+    text-align: center;
+}
+.resume-action-btn.active {
+    border-color: yellow;
+}
+
+
+.video-progress-bar-slider{
+  cursor: pointer;
+  height: 20px;
+  outline: thin solid white;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.video-progress-bar-slider span
+{
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 0px;
+}
+
+.video-progress-bar-slider.active span{
+  border:4px solid #4339bb;
+}

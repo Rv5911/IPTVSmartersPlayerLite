@@ -1,0 +1,857 @@
+  @media only screen and (max-width: 1680px){
+        #channel-page {
+            padding: 10px 30px 0 30px;
+        }
+        #channel-page .page-top-info-container{
+            margin:0 auto;
+            padding:10px 0;
+        }
+        #channel-page-category-name,#catchup-page-category-name,#catchup-detail-page-category-name{
+            color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 20px;
+            font-size: 24px;
+            border-left: 2px solid;
+            padding-left: 20px;
+            line-height: 1.0;
+            margin-top: 10px;
+        }
+        #channel-page .top-info-icons-container{
+            position: relative;
+        }
+        #channel-page .search-input-wrapper-1{
+            left: 50px;
+        }
+        #channel-page .top-search-input{
+            width: 91%;
+            position: absolute;
+            right:0;
+            padding-left: 100px;
+        }
+        .search-input-activated #channel-page-date-container{
+            display: none;
+        }
+        .channel-category-item-wrapper {
+            color: #eee;
+            white-space: nowrap;
+        }
+        .channel-category-item-name {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 22px;
+            width: 80%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-right: 10px;
+        }
+        .channel-category-channel-count {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 24px;
+            width: 20%;
+        }
+        #channel-page-current-category-name.active{
+            color: #ec8604;
+        }
+
+        #channel-page .top-info-icons-container,
+        #catchup-channel-page .top-info-icons-container,
+        #catchup-detail-page .top-info-icons-container
+        {
+            width: 66.66%;
+        }
+        #channel-page .top-info-icon{
+            margin-left: 40px;
+        }
+        #channel-page .search-input-wrapper-1{
+            left:0;
+            right: -30px;
+        }
+        #channel-page-date-container,
+        #catchup-page-date-container,
+        #catchup-detail-page-date-container{
+            margin-right: 100px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        #channel-page .search-input-container{
+            right: 150px;
+        }
+        #channel-page-contents-container{
+            white-space: nowrap;
+            font-size: 0;
+            height: 940px;
+            margin-top:20px;
+        }
+        #channel-page .top-info-logo img{
+            width: 215px;
+                height: 70px;
+        }
+        #channel-menu-left-part{
+            width: 60%;
+            display: inline-block;
+            padding: 0 0px;
+            height: 100%;
+            vertical-align: top;
+            background: rgb(12, 12, 12);
+        }
+        #channel-categories-container{
+            display: inline-block;
+            vertical-align: top;
+            height: 100%;
+            width: 50%;
+        }
+        #channel-categories-wrapper {
+            height: 525px;
+            position: relative;
+            overflow-y: scroll;
+        }
+        .channel-category-item-container {
+            padding: 12px 20px;
+            border-bottom: 1px solid #333;
+            transition: all 0.3s;
+        }
+        .channel-category-item-container.active{
+            background: #006172;
+        }
+
+        #channel-page-category-container {
+            color: #fff;
+            white-space: nowrap;
+        }
+        #channel-menus-container{
+            height:595px;
+            overflow-y: scroll;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        #channel-page-right-part-wrapper{
+            height: 100%;
+            position: relative;
+        }
+        #channel-page-right-part-wrapper.expanded{
+            position: fixed;
+            left:0;
+            top:0;
+            width: 100%;
+            height: 100%;
+        }
+        #channel-page-programmes-container {
+            margin-top: 15px;
+        }
+        .channel-page-programme-wrapper {
+            margin-top: 10px;
+            overflow: hidden;
+
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            line-height: 1;
+        }
+        .channel-page-programme-item {
+            font-size: 22px;
+            color: #fff;
+            font-weight: normal;
+            line-height: 1.2;
+        }
+        .channel-page-program-desc {
+            color: #ddd;
+            font-size: 18px;
+            font-weight: lighter;
+            white-space: normal;
+        }
+        .channel-page-programme-item.current {
+            color: #05A0BC;
+        }
+
+        #channel-page .channel-menu-item{
+            padding: 0 5px;
+            font-size: 22px;
+            color:#fff;
+            width:100%;
+            margin-right: 150px;
+            position:relative;
+            border-bottom: 1px solid #333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 60px;
+        }
+        #channel-page .vod-series-fav-icon{
+            right:10px;
+            font-size: 40px;
+        }
+
+        #channel-page .channel-menu-item.active{
+            background:#006172;
+        }
+        .channel-menu-item span{
+            font-weight: normal;
+        }
+        #live-channel-category-name {
+            font-size: 35px;
+            color: #999;
+            text-align: center;
+            width: calc(100% - 320px);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        #channel-page-right-part{
+            overflow-y: hidden;
+            display: inline-block;
+            width: 40%;
+            vertical-align: top;
+            padding: 0 0 0 20px;
+            height: 100%;
+        }
+
+
+
+        #channel-page .channel-icon{
+            width: 77px;
+            height: 60px;
+            margin: 0 4px;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+        }
+        .channel-icon img{
+            height: 55px;
+            max-width: 100%;
+            position: absolute;
+                top: 5%;
+                left: 0%;
+
+        }
+        .channel-play-state {
+            margin-right: 10px;
+            color: #1A8A3F;
+        }
+
+        #channel-page .channel-number{
+            width:90px;
+            margin-right:10px;
+            text-align: center;
+            display:inline-block;
+        }
+        #channel-page .player-container{
+            width:100%;
+            height:307px;
+            background: #000;
+            position: relative;
+            z-index:20
+        }
+        /*#channel-page .player-container.expanded{*/
+        #channel-page-right-part-wrapper.expanded .player-container{
+            position:fixed;
+            left:0;
+            top:0;
+            height:100vh;
+            width:100vw;
+        }
+        #channel-page-video{
+            left:0;
+            top:0;
+            position:absolute;
+            width:100%;
+            height:100%;
+        }
+        #channel-page .channel-information-container{
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(21, 21, 21, 0.65);
+        }
+
+        #channel-page-footer {
+            text-align: center;
+            position: fixed;
+            left: 50px;
+            right: 50px;
+            bottom: 0;
+            background: rgba(21, 21, 21, 0.65);
+            font-size: 25px;
+            color: #fff;
+            padding: 20px;
+        }
+        #channel-page-footer span {
+            font-weight: normal;
+        }
+
+
+        #channel-title{
+            font-size:40px;
+            color:#fff;
+
+        }
+
+
+
+        #channel-page .player-container{
+        }
+        #live-channel-button-container{
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            width:fit-content;
+        }
+        .channel-action-btn{
+            font-size: 30px;
+            /*width: 200px;*/
+            padding:15px 50px;
+            background: #520178;
+            color: #ccc;
+            border-radius: 35px;
+            border: 1px solid #fff0;
+        }
+        .channel-action-btn.active, .channel-action-btn:hover {
+            color: #fff;
+            background: #910ad0;
+            border: 2px solid #fff;
+        }
+        .favourite-icon{
+            position: absolute;
+            right:40px;
+            top:50%;
+            transform: translateY(-50%);
+        }
+
+        #typed-channel-number{
+            position: fixed;
+            top: 30px;
+            right: 40px;
+            color: yellow;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        #channel-back-button-text{
+            padding:0 !important;
+            width: 80px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        #search-btn-text{
+            padding:0 !important;
+            width: 82px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #channel-page-no-epg-container {
+            margin-top: 50px;
+        }
+        #channel-page-no-epg-title {
+            color: #fff;
+            font-size: 30px;
+            font-weight: normal;
+            text-align: center;
+        }
+        #channel-page-install-epg-button {
+            color: #fff;
+            font-size: 32px;
+            width: 400px;
+            margin: 15px auto;
+            background: #171F28;
+            text-align: center;
+            font-weight: normal;
+            padding: 15px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        #channel-page-install-epg-button.active{
+            background:#006172;
+        }
+        #fav-label-container {
+            position: fixed;
+            color: #fff;
+            font-size: 24px;
+            bottom: 20px;
+            right: 30px;
+        }
+        #fav-label-container span {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: normal;
+        }
+        .fav-label-symbol {
+            height: 20px;
+            width: 30px;
+            background: #ffff00;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        #epg-loader-container {
+            text-align: center;
+            font-size: 24px;
+            color: #ccc;
+            margin-top: 50px;
+        }
+        #epg-loader-img {
+            width: 80px;
+        }
+        #epg-loader-txt {
+            font-weight: lighter;
+        }
+        #channel-player-note {
+            position: relative;
+
+            top: 50%;
+
+            color: #ddd;
+            font-size: 22px;
+            font-weight: normal;
+            text-align: center;
+        }
+        #channel-render-loader {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            top: 150px;
+            transform: translateX(-50%);
+        }
+        .setting-coming-soon-msg {
+            display: inline-block;
+            vertical-align: middle;
+            color: #9a7c39;
+            font-size: 25px;
+            margin-left: 10px;
+        }
+
+
+  }
+
+   @media only screen and (min-width: 1680px){
+
+        #channel-page {
+            padding: 10px 30px 0 30px;
+        }
+        #channel-page .page-top-info-container{
+            margin:0 auto;
+            padding:10px 0;
+        }
+        #channel-page-category-name,#catchup-page-category-name,#catchup-detail-page-category-name{
+            color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 20px;
+            font-size: 30px;
+            border-left: 2px solid;
+            padding-left: 20px;
+            line-height: 1.0;
+            margin-top: 10px;
+        }
+        #channel-page .top-info-icons-container{
+            position: relative;
+        }
+        #channel-page .search-input-wrapper-1{
+            left: 50px;
+        }
+        #channel-page .top-search-input{
+            width: 91%;
+            position: absolute;
+            right:0;
+            padding-left: 60px;
+        }
+        .search-input-activated #channel-page-date-container{
+            display: none;
+        }
+        .channel-category-item-wrapper {
+            color: #eee;
+            white-space: nowrap;
+        }
+        .channel-category-item-name {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 30px;
+            width: 80%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .channel-category-channel-count {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 25px;
+        }
+        #channel-page-current-category-name.active{
+            color: #ec8604;
+        }
+
+        #channel-page .top-info-icons-container,
+        #catchup-channel-page .top-info-icons-container,
+        #catchup-detail-page .top-info-icons-container
+        {
+            width: 66.66%;
+        }
+        #channel-page .top-info-icon{
+            margin-left: 40px;
+        }
+        #channel-page .search-input-wrapper-1{
+            left:0;
+            right: -30px;
+        }
+        #channel-page-date-container,
+        #catchup-page-date-container,
+        #catchup-detail-page-date-container{
+            margin-right: 100px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        #channel-page .search-input-container{
+            right: 150px;
+        }
+        #channel-page-contents-container{
+            white-space: nowrap;
+            font-size: 0;
+            height: 940px;
+            margin-top:20px;
+        }
+        #channel-page .top-info-logo img{
+            height: 80px;
+        }
+        #channel-menu-left-part{
+            width: 60%;
+            display: inline-block;
+            padding: 0 0px;
+            height: 100%;
+            vertical-align: top;
+            background: rgb(12, 12, 12);
+        }
+        #channel-categories-container{
+            display: inline-block;
+            vertical-align: top;
+            height: 100%;
+            width: 50%;
+        }
+        #channel-categories-wrapper {
+            height: 870px;
+            position: relative;
+            overflow-y: scroll;
+        }
+        .channel-category-item-container {
+            padding: 10px 20px;
+            border-bottom: 1px solid #333;
+            transition: all 0.3s;
+        }
+        .channel-category-item-container.active{
+            background: #006172;
+        }
+
+        #channel-page-category-container {
+            color: #fff;
+            white-space: nowrap;
+        }
+        #channel-menus-container{
+            height:945px;
+            overflow-y: scroll;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        #channel-page-right-part-wrapper{
+            height: 100%;
+            position: relative;
+        }
+        #channel-page-right-part-wrapper.expanded{
+            position: fixed;
+            left:0;
+            top:0;
+            width: 100%;
+            height: 100%;
+        }
+        #channel-page-programmes-container {
+            margin-top: 15px;
+        }
+        .channel-page-programme-wrapper {
+            margin-top: 10px;
+              overflow: hidden;
+             -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            line-height: 1;
+        }
+        .channel-page-programme-item {
+            font-size: 30px;
+            color: #fff;
+            font-weight: normal;
+            line-height: 1.2;
+        }
+        .channel-page-program-desc {
+            color: #ddd;
+            font-size: 24px;
+            font-weight: lighter;
+            white-space: normal;
+        }
+        .channel-page-programme-item.current {
+            color: #05A0BC;
+        }
+
+        #channel-page .channel-menu-item{
+            padding:0 10px;
+            font-size:25px;
+            color:#fff;
+            width:100%;
+            margin-right:150px;
+            position:relative;
+            border-bottom: 1px solid #333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 60px;
+        }
+        #channel-page .vod-series-fav-icon{
+            right:10px;
+            font-size: 40px;
+        }
+
+        #channel-page .channel-menu-item.active{
+            background:#006172;
+        }
+        .channel-menu-item span{
+            font-weight: normal;
+        }
+        #live-channel-category-name {
+            font-size: 35px;
+            color: #999;
+            text-align: center;
+            width: calc(100% - 320px);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        #channel-page-right-part{
+            overflow-y: hidden;
+            display: inline-block;
+            width: 40%;
+            vertical-align: top;
+            padding: 0 0 0 20px;
+            height: 100%;
+        }
+
+
+
+        #channel-page .channel-icon{
+            width:80px;
+            height:70px;
+            margin:0 10px;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+        }
+        .channel-icon img{
+            height: 55px;
+            max-width: 100%;
+            position: absolute;
+                top: 5%;
+                left: 0%;
+        }
+        .channel-play-state {
+            margin-right: 10px;
+            color: #1A8A3F;
+        }
+
+        #channel-page .channel-number{
+            width:90px;
+            margin-right:10px;
+            text-align: center;
+            display:inline-block;
+        }
+        #channel-page .player-container{
+            width:100%;
+            height:407px;
+            background: #000;
+            position: relative;
+            z-index:20
+        }
+        /*#channel-page .player-container.expanded{*/
+        #channel-page-right-part-wrapper.expanded .player-container{
+            position:fixed;
+            left:0;
+            top:0;
+            height:100vh;
+            width:100vw;
+        }
+        #channel-page-video{
+            left:0;
+            top:0;
+            position:absolute;
+            width:100%;
+            height:100%;
+        }
+        #channel-page .channel-information-container{
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(21, 21, 21, 0.65);
+        }
+
+        #channel-page-footer {
+            text-align: center;
+            position: fixed;
+            left: 50px;
+            right: 50px;
+            bottom: 0;
+            background: rgba(21, 21, 21, 0.65);
+            font-size: 25px;
+            color: #fff;
+            padding: 20px;
+        }
+        #channel-page-footer span {
+            font-weight: normal;
+        }
+
+
+        #channel-title{
+            font-size:40px;
+            color:#fff;
+
+        }
+
+
+
+        #channel-page .player-container{
+        }
+        #live-channel-button-container{
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            width:fit-content;
+        }
+        .channel-action-btn{
+            font-size: 30px;
+            /*width: 200px;*/
+            padding:15px 50px;
+            background: #520178;
+            color: #ccc;
+            border-radius: 35px;
+            border: 1px solid #fff0;
+        }
+        .channel-action-btn.active, .channel-action-btn:hover {
+            color: #fff;
+            background: #910ad0;
+            border: 2px solid #fff;
+        }
+        .favourite-icon{
+            position: absolute;
+            right:40px;
+            top:50%;
+            transform: translateY(-50%);
+        }
+
+        #typed-channel-number{
+            position: fixed;
+            top: 30px;
+            right: 40px;
+            color: yellow;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        #channel-back-button-text{
+            padding:0 !important;
+            width: 80px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        #search-btn-text{
+            padding:0 !important;
+            width: 82px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #channel-page-no-epg-container {
+            margin-top: 50px;
+        }
+        #channel-page-no-epg-title {
+            color: #fff;
+            font-size: 30px;
+            font-weight: normal;
+            text-align: center;
+        }
+        #channel-page-install-epg-button {
+            color: #fff;
+            font-size: 32px;
+            width: 400px;
+            margin: 15px auto;
+            background: #171F28;
+            text-align: center;
+            font-weight: normal;
+            padding: 15px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        #channel-page-install-epg-button.active{
+            background:#006172;
+        }
+        #fav-label-container {
+            position: fixed;
+            color: #fff;
+            font-size: 30px;
+            bottom: 20px;
+            right: 30px;
+        }
+        #fav-label-container span {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: normal;
+        }
+        .fav-label-symbol {
+            height: 20px;
+            width: 30px;
+            background: #ffff00;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        #epg-loader-container {
+            text-align: center;
+            font-size: 28px;
+            color: #ccc;
+            margin-top: 50px;
+        }
+        #epg-loader-img {
+            width: 150px;
+        }
+        #epg-loader-txt {
+            font-weight: lighter;
+        }
+        #channel-player-note {
+            position: relative;
+
+            top: 50%;
+
+            color: #ddd;
+            font-size: 30px;
+            font-weight: normal;
+             text-align: center;
+        }
+        #channel-render-loader {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            top: 150px;
+            transform: translateX(-50%);
+        }
+        .setting-coming-soon-msg {
+            display: inline-block;
+            vertical-align: middle;
+            color: #9a7c39;
+            font-size: 25px;
+            margin-left: 10px;
+        }
+
+   }
+

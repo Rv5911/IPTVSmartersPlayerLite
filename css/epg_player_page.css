@@ -1,0 +1,85 @@
+#epg-channel-title{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    padding:20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    z-index: 10;
+}
+
+#epg-player-page .player-container{
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #222;
+}
+#epg-player-page .player-container {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    background-size: 100% 100%;
+}
+#epg-player-video-controls-container {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    color: #fff;
+    padding:20px;
+    display: none;
+}
+#epg-player-progress-controls-container {
+    margin: 0 auto;
+    width: 80%;
+       background: rgb(0 0 0 / 70%);
+
+    padding: 15px 0px 10px 0px;
+}
+#epg-player-progress-container{
+    margin: 0 auto;
+}
+#epg-player-video-progressbar-container{
+    padding: 0;
+    margin: 0 20px;
+}
+#epg-player-page .progress-amount {
+    background: #dd0000;
+    height: 100%;
+    display: block;
+    width: 0%;
+}
+#epg-player-video-time-container{
+    font-size: 0;
+    margin-top:15px;
+}
+
+#epg-player-page .video-time{
+    font-size:22px;
+    width:50%;
+    vertical-align: middle;
+    display: inline-block;
+    padding:0 10px;
+}
+#epg-player-video-title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+       background: rgb(0 0 0 / 70%);
+
+    color:#fff;
+}
