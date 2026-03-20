@@ -23,12 +23,15 @@ window.fetchConfigs = function () {
       var baseUrl = remoteConfig.getValue("Base_Url").asString();
       var showQr = remoteConfig.getValue("show_qr").asBoolean();
       var whmcsLink = remoteConfig.getValue("whmcs_link").asString();
+      var qrLinkUrl = remoteConfig.getValue("qr_link").asString();
 
-      console.log("Fetched credentials from Remote Config:", {
-        Base_Url: baseUrl,
-        show_qr: showQr,
-        whmcs_link: whmcsLink,
-      });
+
+      // console.log("Fetched credentials from Remote Config:", {
+      //   Base_Url: baseUrl,
+      //   show_qr: showQr,
+      //   whmcs_link: whmcsLink,
+      //   qr_link: qrLinkUrl
+      // });
 
       if (baseUrl) {
         localStorage.setItem("base_Url", baseUrl);
@@ -42,11 +45,17 @@ window.fetchConfigs = function () {
         localStorage.setItem("whmcs_link", whmcsLink);
         window.whmcs_link = whmcsLink;
       }
+            if (qrLinkUrl) {
+        localStorage.setItem("qr_link", qrLinkUrl);
+        window.qrLinkUrl = qrLinkUrl;
+      }
+
 
       return {
         base_Url: baseUrl,
         show_qr_code: showQr,
         whmcs_link: whmcsLink,
+        qr_link: qrLinkUrl
       };
     })
     .catch(function (error) {
@@ -54,7 +63,6 @@ window.fetchConfigs = function () {
     });
 };
 
-// Maintain backward compatibility for now if needed, but consolidate to use fetchConfigs
 window.fetchApiData = window.fetchConfigs;
 window.fetchShowQrCode = window.fetchConfigs;
 window.fetchWhmcsLink = window.fetchConfigs;

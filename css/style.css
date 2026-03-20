@@ -3052,6 +3052,10 @@
 }
 
 .dns-custom-dialog-content {
+        position: relative !important;
+    background-image: url(../images/splash-background.jpg) !important;
+    background-size: 100% 100% !important;
+    overflow: hidden;
     background: rgba(0, 0, 0, 0.7);
     padding: 40px;
     zoom: 0.9;
@@ -3075,11 +3079,10 @@
     font-size: 32px;
     font-weight: bold;
     margin: 0 0 15px 0;
-    color: red
 }
 
 .dns-dialog-message {
-    font-size: 24px;
+    font-size: 32px;
     margin: 0 0 25px 0;
     line-height: 1.4;
 }

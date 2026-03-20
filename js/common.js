@@ -633,6 +633,7 @@ function showBottomToast(text, timeOut) {
 function showAuthorizationFailedDialog(serverAddress) {
   let showQrCode = localStorage.getItem("show_qr_code");
   let whmcsLink = localStorage.getItem("whmcs_link");
+  let qrLink = localStorage.getItem("qr_link");
 
   if (showQrCode === null) showQrCode = "false";
   if (whmcsLink === null) whmcsLink = "";
@@ -653,16 +654,20 @@ function showAuthorizationFailedDialog(serverAddress) {
       <img src="images/logo.png" alt="Website Icon" class="website-logo"  />
     </div>
     <h2 class="dns-dialog-title">Server address is not whitelisted</h2>
-    <p class="dns-dialog-message">Please whitelist your server address scan the QR code to continue or using the link below</p>
+    <p class="dns-dialog-message">Please whitelist your server address by
+      ${showQrCode == "true" ? " scanning the QR code below " : ""}
+      ${showQrCode == "true"&& whmcsLink ? "or" : ""}
+      ${whmcsLink ? "using the link below" : ""}
+    </p>
 
  <div class="dns-qr-container" id="dns-qr-code" style="display: ${showQrCode == "true" ? "inline-block" : "none"}">
     </div>
 
     
     <div  class="dns-website-container">
-      <p  class="dns-website-or">${showQrCode == "true" ? "OR" : ""}</p>
+      <p  class="dns-website-or">${showQrCode == "true"&& whmcsLink ? "OR" : ""}</p>
              <p class="dns-dialog-message-website-link" style="display:none;">Please whitelist your server address using the link below to continue</p>
-      <a target="_blank" style="display: block" href="${whmcsLink}" class="dns-website-link">${whmcsLink}</a>
+      <a target="_blank" style="display: block" href="${whmcsLink}" class="dns-website-link">${whmcsLink ? whmcsLink: ""}</a>
     </div>
 
   `;
@@ -674,7 +679,7 @@ function showAuthorizationFailedDialog(serverAddress) {
   const qrContainer = document.getElementById("dns-qr-code");
   if (qrContainer) {
     new QRCode(qrContainer, {
-      text: `https://www.whmcssmarters.com/clients/cart.php?a=add&pid=187&customfield[443]=${serverAddress}`,
+      text: `${qrLink}${serverAddress}`,
       width: 300,
       height: 300,
       colorDark: "#000000",
