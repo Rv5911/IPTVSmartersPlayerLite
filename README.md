@@ -1,2 +1,2 @@
-# iptvSmartersProLite
-# IPTVSmartersPlayerLite
+<!-- # iptvSmartersProLite -->
+# IPTVSmartersPlayer
