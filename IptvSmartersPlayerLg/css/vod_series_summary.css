@@ -1,0 +1,944 @@
+@media only screen and (max-width: 1680px){
+
+    #vod-series-background-img{
+        position: fixed;
+        left:0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #vod-series-page-container{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px 80px
+    }
+    #vod-series-background-img-overlay{
+        position: fixed;
+        left:0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        background: rgba(16, 16, 16, 0.89);
+    }
+    #series-top-info-container{
+        padding:0;
+    }
+    #vod-summary-page .page-top-info-container,
+    #series-summary-page.page-top-info-container {
+        padding: 0;
+    }
+    .vod-series-summary-content-container{
+        color: white;
+        height: 330px;
+        overflow-y: hidden;
+            width: 100%;
+     }
+    .vod-series-summary-content-wrapper{
+        white-space: nowrap;
+    }
+    .vod-series-summary-poster-container{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #vod-summary-image-wrapper,#series-summary-image-wrapper {
+        position:relative;
+    }
+    #vod-summary-image-wrapper img, #series-summary-image-wrapper img{
+        box-shadow: 0 0 25px #111;
+        width: 170px;
+        border-radius: 5px;
+        max-height: 370px;
+        object-fit: cover;
+            height: 250px;
+    }
+    .vod-summary-information-container {
+        padding-left: 50px;
+        display: inline-block;
+        width: 650px;
+        vertical-align: top;
+    }
+    .vod-summary-item {
+        font-size: 24px;
+        font-weight: normal;
+        margin-bottom: 12px;
+        color: #ddd;
+    }
+    .vod-summary-item-label {
+        font-weight: bold;
+        width: 210px;
+        display: inline-block;
+        vertical-align: middle;
+        vertical-align: top;
+    }
+    .vod-summary-item-text {
+        font-weight: normal;
+        display: inline-block;
+        vertical-align: middle;
+        white-space: normal;
+    }
+    #vod-summary-description{
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: lighter;
+            max-width: 1600px;
+            white-space: normal;
+    }
+    #series-summary-description {
+        margin-top: -30px;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: lighter;
+        max-width: 1600px;
+        white-space: normal;
+    }
+    #vod-summary-action-container,#series-summary-action-container{
+        display: inline-block;
+        vertical-align: middle;
+
+        white-space: nowrap;
+    }
+    .vod-series-summary-action-btns-container{
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+    }
+    .vod-series-action-btn-wrapper{
+        display: inline-block;
+        vertical-align: middle;
+        padding:0 5px;
+        width: 33.33%;
+        text-align: center;
+    }
+    .vod-series-action-btn {
+        font-size: 22px;
+        padding: 11px 9px;
+        transition: all 0.1s;
+        background: #222;
+        min-height: 26px;
+        position: relative;
+    }
+    .vod-summary-action-container .vod-series-action-btn:nth-child(1):hover,
+    .vod-summary-action-container .vod-series-action-btn:nth-child(1).active{
+        background: linear-gradient(80deg,#1CA5DC 5%, #21D987 100%);
+    }
+    .vod-summary-action-container .vod-series-action-btn:nth-child(2):hover,
+    .vod-summary-action-container .vod-series-action-btn:nth-child(2).active{
+        background: linear-gradient(80deg,#41B4E5 5%, #4381EA 100%);
+    }
+    .vod-summary-action-container .vod-series-action-btn:nth-child(3):hover,
+    .vod-summary-action-container .vod-series-action-btn:nth-child(3).active{
+        background: linear-gradient(80deg,#F04055 5%, #E78134 100%);
+    }
+    .vod-summary-action-container .vod-series-action-btn:nth-child(4):hover,
+    .vod-summary-action-container .vod-series-action-btn:nth-child(4).active{
+        background: linear-gradient(80deg,#25A9E1 5%, #4381EA 100%);
+    }
+    .action-btn-progressbar-container{
+        position: absolute;
+        bottom: 0px;
+        height: 8px;
+        left: 0px;
+        right: 0px;
+        background: #5F6E92;
+        display: none;
+    }
+    .action-btn-progressbar-container.has-progress{
+        display: block;
+    }
+
+    .action-btn-progressbar-wrapper {
+        position: relative;
+        height: 100%;
+    }
+    .action-btn-progressbar-wrapper {
+        position: relative;
+        height: 100%;
+    }
+    .action-btn-progress-amount {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: #FFEC3C;
+    }
+
+
+    .vod-line {
+        width: 400px;
+        border: 2px solid #f800b2;
+        margin-top: 20px;
+    }
+
+    .vod-series-rating-container{
+        text-align: center;
+        display: inline-block;
+        width: 200px;
+        vertical-align: middle;
+    }
+
+
+
+
+    #episodes-container {
+        margin-top: 20px;
+        overflow-y: scroll;
+        height: 580px;
+        position: relative;
+        margin-left:-10px;
+    }
+    .episode-cast-tab-container {
+        border-bottom: 1px solid #d0c9c9;
+        margin-left:-100px;
+        margin-right:-100px;
+        padding-left:100px;
+    }
+    .episode-cast-tab-btn {
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff;
+        width: 200px;
+        font-size: 24px;
+        text-align: center;
+        font-weight: normal;
+        background: rgba(60, 58, 58, 0.45);
+        padding: 7px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all 0.5s;
+        border-bottom:5px solid transparent;
+    }
+    .episode-cast-tab-btn:hover, .episode-cast-tab-btn.active{
+        border-color:#DC84EA;
+    }
+    .episode-item-wrapper{
+        position:relative;
+        width: 100%;
+        padding:10px 10px;
+        overflow:hidden;
+        white-space: nowrap;
+        border-radius: 5px;
+        transition: all 0.3s;
+    }
+    .episode-item-wrapper.active{
+        background: #13789e;
+    }
+    .episode-item-img-wrapper{
+        position: relative;
+        width: 282px;
+        height: 165px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .episode-item-img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .episode-play-icon-wrapper {
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        font-size: 30px;
+        color: #eee;
+
+        width: 55px;
+        height: 55px;
+        text-align: center;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        visibility: hidden;
+        transition: all 0.2s;
+    }
+    .episode-play-icon {
+        line-height: 50px;
+        margin-left: 2px;
+    }
+    .episode-item-wrapper.active .episode-play-icon-wrapper{
+        visibility: visible;
+    }
+    .episode-progress-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 7px;
+        background: #5a5757d6;
+    }
+    .episode-progress-bar {
+        background: #ffff00;
+        height: 100%;
+    }
+    .episode-item-info-wrapper {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 30px;
+    }
+    .episode-item-name {
+        font-size: 24px;
+        font-weight: normal;
+        color: #fff;
+        padding: 5px 0;
+    }
+    .episode-item-rating {
+        margin-top: 0px;
+        font-size: 24px;
+        color: #55524D;
+        position: relative;
+        width: fit-content;
+    }
+    .episode-item-post {
+        font-weight: normal;
+            width: 740px;
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #ddd;
+            font-size: 20px;
+            line-height: 1.3;
+    }
+    .episode-item-duration {
+        width: 100px;
+        background: rgba(115, 112, 112, 0.33);
+        padding: 7px 15px;
+        border-radius: 5px;
+        color: #ddd;
+        font-size: 18px;
+        font-weight: normal;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        text-align: center;
+    }
+
+    #casts-container {
+        position: relative;
+        margin-top: 20px;
+         overflow-y: scroll;
+                    height: 320px;
+    }
+    .cast-item-wrapper {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 5px;
+        position: relative;
+    }
+    .cast-item-img {
+        width: 130px;
+        height: 190px;
+        object-fit: cover;
+        border-radius: 5px;
+        border:3px solid transparent;
+        transition: all 0.1s;
+
+    }
+    #casts-container-vod{
+        position: relative;
+
+            overflow-y: scroll;
+            margin-top: 15px;
+            height: 315px;
+    }
+    .cast-item-wrapper.active .cast-item-img{
+        border-color: white;
+    }
+    .cast-item-name {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    #seasons-modal{
+        background: rgba(94, 92, 92, 0.54);
+    }
+    #seasons-modal .modal-dialog{
+        width: 1200px;
+        max-width: 1200px;
+    }
+    #seasons-modal .modal-content{
+        background: rgba(4, 4, 4, 0.84);
+    }
+    #seasons-container {
+        height: 350px;
+        overflow-y: scroll;
+        margin-top: 40px;
+        position: relative;
+        font-size:0;
+    }
+    .seasons-modal-title {
+        padding: 15px;
+        text-align: center;
+        color: #fff;
+        font-size: 45px;
+        font-weight: normal;
+        border-bottom: 2px solid #fff;
+    }
+    .season-item-container {
+        display: inline-block;
+        width: 25%;
+        padding: 0 20px;
+        margin-bottom: 15px;
+    }
+    .season-item-wrapper {
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        background: #171F28;
+        padding: 10px;
+        transition: all 0.1s;
+        border-radius: 3px;
+        font-weight: normal;
+    }
+    .season-item-wrapper:hover,.season-item-wrapper.active{
+        background: #1CA5DC;
+    }
+
+    #cast-detail-container{
+        display: none;
+    }
+    #cast-detail-info-container {
+        margin-top: 10px;
+    }
+    #cast-detail-img {
+        width: 170px;
+        height: 250px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #cast-detail-info-wrapper {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 50px;
+    }
+    .cast-detail-info-item {
+        font-size: 24px;
+        color: #bbb;
+        margin-bottom: 8px;
+    }
+    .cast-detail-info-label {
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: middle;
+        width: 250px;
+    }
+    .cast-detail-info-value {
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: normal;
+    }
+    #cast-detail-desc {
+        font-weight: normal;
+        font-size: 24px;
+        margin-top: 20px;
+        color: #ccc;
+    }
+    .vod-series-fav-mark {
+        position: fixed;
+        right: 200px;
+        top: 120px;
+        font-size: 45px;
+        border: 3px solid transparent;
+        padding: 10px;
+    }
+    .vod-series-fav-mark.favourite{
+        color: #E74C3C;
+    }
+    .vod-series-fav-mark.active{
+        border-color: #fff;
+    }
+    #series-summary-plot-wrapper{
+        height: 80px;
+    }
+     .slideUpHide{
+                    transition: all 0.3s;
+                    right: 10px;
+                    width: 100%;
+                    height: 0px;
+                    visibility: hidden;
+            }
+        .slideUpShow{
+                        transition: all 0.3s;
+                        right: 10px;
+                        width: 100%;
+
+                }
+}
+
+
+
+
+@media only screen and (min-width: 1680px){
+
+    #vod-series-background-img{
+        position: fixed;
+        left:0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #vod-series-page-container{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px 80px
+    }
+    #vod-series-background-img-overlay{
+        position: fixed;
+        left:0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        background: rgba(16, 16, 16, 0.89);
+    }
+    #series-top-info-container{
+        padding:0;
+    }
+    #vod-summary-page .page-top-info-container,
+    #series-summary-page.page-top-info-container {
+        padding: 0;
+    }
+    .vod-series-summary-content-container{
+        color: white;
+        height: 500px;
+        overflow-y: hidden;
+            width: 100%;
+    }
+    .vod-series-summary-content-wrapper{
+        white-space: nowrap;
+    }
+    .vod-series-summary-poster-container{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #vod-summary-image-wrapper,#series-summary-image-wrapper {
+        position:relative;
+    }
+    #vod-summary-image-wrapper img, #series-summary-image-wrapper img{
+        box-shadow: 0 0 25px #111;
+        width: 250px;
+        border-radius: 5px;
+        max-height: 370px;
+        object-fit: cover;
+    }
+    .vod-summary-information-container {
+        padding-left: 50px;
+        display: inline-block;
+        width: 1200px;
+        vertical-align: top;
+    }
+    .vod-summary-item {
+        font-size: 28px;
+        font-weight: normal;
+        margin-bottom: 15px;
+        color: #ddd;
+    }
+    .vod-summary-item-label {
+        font-weight: bold;
+        width: 250px;
+        display: inline-block;
+        vertical-align: middle;
+        vertical-align: top;
+    }
+    .vod-summary-item-text {
+        font-weight: normal;
+        display: inline-block;
+        vertical-align: middle;
+        white-space: normal;
+    }
+    #vod-summary-description{
+             font-size: 28px;
+            line-height: 32px;
+            font-weight: lighter;
+            max-width: 1600px;
+            white-space: normal;
+    }
+    #series-summary-description {
+        margin-top: -30px;
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: lighter;
+        max-width: 1600px;
+        white-space: normal;
+    }
+    #vod-summary-action-container,#series-summary-action-container{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left:50px;
+        white-space: nowrap;
+    }
+    .vod-series-summary-action-btns-container{
+        display: inline-block;
+        vertical-align: middle;
+        width: 1000px;
+    }
+    .vod-series-action-btn-wrapper{
+        display: inline-block;
+        vertical-align: middle;
+        padding:0 5px;
+        width: 33.33%;
+        text-align: center;
+    }
+    .vod-series-action-btn {
+        font-size: 25px;
+        padding: 15px 50px;
+        transition: all 0.1s;
+        background: #222;
+        min-height: 67px;
+        position: relative;
+    }
+    .vod-summary-action-container .vod-series-action-btn:nth-child(1):hover,
+    .vod-summary-action-container .vod-series-action-btn:nth-child(1).active{
+        background: linear-gradient(80deg,#1CA5DC 5%, #21D987 100%);
+    }
+    .vod-summary-action-container .vod-series-action-btn:nth-child(2):hover,
+    .vod-summary-action-container .vod-series-action-btn:nth-child(2).active{
+        background: linear-gradient(80deg,#41B4E5 5%, #4381EA 100%);
+    }
+    .vod-summary-action-container .vod-series-action-btn:nth-child(3):hover,
+    .vod-summary-action-container .vod-series-action-btn:nth-child(3).active{
+        background: linear-gradient(80deg,#F04055 5%, #E78134 100%);
+    }
+    .vod-summary-action-container .vod-series-action-btn:nth-child(4):hover,
+    .vod-summary-action-container .vod-series-action-btn:nth-child(4).active{
+        background: linear-gradient(80deg,#25A9E1 5%, #4381EA 100%);
+    }
+    .action-btn-progressbar-container{
+        position: absolute;
+        bottom: 0px;
+        height: 8px;
+        left: 0px;
+        right: 0px;
+        background: #5F6E92;
+        display: none;
+    }
+    .action-btn-progressbar-container.has-progress{
+        display: block;
+    }
+
+    .action-btn-progressbar-wrapper {
+        position: relative;
+        height: 100%;
+    }
+    .action-btn-progressbar-wrapper {
+        position: relative;
+        height: 100%;
+    }
+    .action-btn-progress-amount {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: #FFEC3C;
+    }
+
+
+    .vod-line {
+        width: 400px;
+        border: 2px solid #f800b2;
+        margin-top: 20px;
+    }
+
+    .vod-series-rating-container{
+        text-align: center;
+        display: inline-block;
+        width: 250px;
+        vertical-align: middle;
+    }
+
+
+
+
+    #episodes-container {
+        margin-top: 20px;
+        overflow-y: scroll;
+        height: 580px;
+        position: relative;
+        margin-left:-10px;
+    }
+    .episode-cast-tab-container {
+        border-bottom: 1px solid #d0c9c9;
+        margin-left:-100px;
+        margin-right:-100px;
+        padding-left:100px;
+    }
+    .episode-cast-tab-btn {
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff;
+        width: 300px;
+        font-size: 30px;
+        text-align: center;
+        font-weight: normal;
+        background: rgba(60, 58, 58, 0.45);
+        padding: 10px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all 0.5s;
+        border-bottom:5px solid transparent;
+    }
+    .episode-cast-tab-btn:hover, .episode-cast-tab-btn.active{
+        border-color:#DC84EA;
+    }
+    .episode-item-wrapper{
+        position:relative;
+        width: 100%;
+        padding:10px 10px;
+        overflow:hidden;
+        white-space: nowrap;
+        border-radius: 5px;
+        transition: all 0.3s;
+    }
+    .episode-item-wrapper.active{
+        background: #13789e;
+    }
+    .episode-item-img-wrapper{
+        position: relative;
+        width: 360px;
+        height: 220px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .episode-item-img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .episode-play-icon-wrapper {
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        font-size: 30px;
+        color: #eee;
+
+        width: 55px;
+        height: 55px;
+        text-align: center;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        visibility: hidden;
+        transition: all 0.2s;
+    }
+    .episode-play-icon {
+        line-height: 50px;
+        margin-left: 2px;
+    }
+    .episode-item-wrapper.active .episode-play-icon-wrapper{
+        visibility: visible;
+    }
+    .episode-progress-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 7px;
+        background: #5a5757d6;
+    }
+    .episode-progress-bar {
+        background: #ffff00;
+        height: 100%;
+    }
+    .episode-item-info-wrapper {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 30px;
+    }
+    .episode-item-name {
+        font-size: 28px;
+        font-weight: normal;
+        color: #fff;
+        padding: 5px 0;
+    }
+    .episode-item-rating {
+        margin-top: 0px;
+        font-size: 28px;
+        color: #55524D;
+        position: relative;
+        width: fit-content;
+    }
+    .episode-item-post {
+        font-weight: normal;
+        width: 1360px;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #ddd;
+        font-size: 23px;
+        line-height: 1.3;
+    }
+    .episode-item-duration {
+        width: fit-content;
+        background: rgba(115, 112, 112, 0.33);
+        padding: 6px 15px;
+        border-radius: 5px;
+        color: #ddd;
+        font-size: 18px;
+        font-weight: normal;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #casts-container {
+        position: relative;
+        margin-top: 20px;
+         overflow-y: scroll;
+                            height: 320px;
+    }
+    .cast-item-wrapper {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 5px;
+        position: relative;
+    }
+    .cast-item-img {
+        width: 190px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+        border:3px solid transparent;
+        transition: all 0.1s;
+
+    }
+    .cast-item-wrapper.active .cast-item-img{
+        border-color: white;
+    }
+    .cast-item-name {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    #seasons-modal{
+        background: rgba(94, 92, 92, 0.54);
+    }
+    #seasons-modal .modal-dialog{
+        width: 1200px;
+        max-width: 1200px;
+    }
+    #seasons-modal .modal-content{
+        background: rgba(4, 4, 4, 0.84);
+    }
+    #seasons-container {
+        height: 350px;
+        overflow-y: scroll;
+        margin-top: 40px;
+        position: relative;
+        font-size:0;
+    }
+    .seasons-modal-title {
+        padding: 15px;
+        text-align: center;
+        color: #fff;
+        font-size: 45px;
+        font-weight: normal;
+        border-bottom: 2px solid #fff;
+    }
+    .season-item-container {
+        display: inline-block;
+        width: 25%;
+        padding: 0 20px;
+        margin-bottom: 15px;
+    }
+    .season-item-wrapper {
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        background: #171F28;
+        padding: 10px;
+        transition: all 0.1s;
+        border-radius: 3px;
+        font-weight: normal;
+    }
+    .season-item-wrapper:hover,.season-item-wrapper.active{
+        background: #1CA5DC;
+    }
+
+    #cast-detail-container{
+        display: none;
+    }
+    #cast-detail-info-container {
+        margin-top: 10px;
+    }
+    #cast-detail-img {
+        width: 270px;
+        height: 320px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #cast-detail-info-wrapper {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 50px;
+    }
+    .cast-detail-info-item {
+        font-size: 28px;
+        color: #bbb;
+        margin-bottom: 8px;
+    }
+    .cast-detail-info-label {
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: middle;
+        width: 250px;
+    }
+    .cast-detail-info-value {
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: normal;
+    }
+    #cast-detail-desc {
+        font-weight: normal;
+        font-size: 28px;
+        margin-top: 20px;
+        color: #ccc;
+    }
+    .vod-series-fav-mark {
+        position: fixed;
+        right: 200px;
+        top: 200px;
+        font-size: 45px;
+        border: 3px solid transparent;
+        padding: 10px;
+    }
+    .vod-series-fav-mark.favourite{
+        color: #E74C3C;
+    }
+    .vod-series-fav-mark.active{
+        border-color: #fff;
+    }
+    #series-summary-plot-wrapper{
+        height: 160px;
+    }
+      #casts-container-vod{
+            position: relative;
+
+                overflow-y: scroll;
+                margin-top: 15px;
+                height: 315px;
+        }
+        .slideUpHide{
+                transition: all 0.3s;
+                right: 10px;
+                width: 100%;
+                height: 0px;
+                visibility: hidden;
+        }
+    .slideUpShow{
+                    transition: all 0.3s;
+                    right: 10px;
+                    width: 100%;
+
+            }
+}

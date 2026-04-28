@@ -1,0 +1,99 @@
+@media only screen and (max-width: 1680px){
+
+        .rating-mark {
+            margin-left: 10px;
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .rating {
+            display: inline-block;
+            unicode-bidi: bidi-override;
+            color: #888888;
+            font-size: 24px;
+            height: 35px;
+            width: auto;
+            margin: 0;
+            position: relative;
+            padding: 0;
+        }
+
+        .rating-upper {
+            color: #ffff00;
+            padding: 0;
+            position: absolute;
+            z-index: 1;
+            display: inline-block;
+            white-space: nowrap;
+            vertical-align: middle;
+            top: 1px;
+            left: 0;
+            overflow: hidden;
+            font-weight: 700;
+        }
+
+        .rating-lower {
+            padding: 0;
+            display: inline-block;
+            white-space: nowrap;
+            vertical-align: middle;
+            z-index: 0;
+            font-weight: 700;
+        }
+
+        .rating-mark{
+            display:inline-block;
+        }
+
+}
+
+
+
+@media only screen and (min-width: 1680px){
+
+        .rating-mark {
+            margin-left: 10px;
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .rating {
+            display: inline-block;
+            unicode-bidi: bidi-override;
+            color: #888888;
+            font-size: 35px;
+            height: 35px;
+            width: auto;
+            margin: 0;
+            position: relative;
+            padding: 0;
+        }
+
+        .rating-upper {
+            color: #ffff00;
+            padding: 0;
+            position: absolute;
+            z-index: 1;
+            display: inline-block;
+            white-space: nowrap;
+            vertical-align: middle;
+            top: 1px;
+            left: 0;
+            overflow: hidden;
+            font-weight: 700;
+        }
+
+        .rating-lower {
+            padding: 0;
+            display: inline-block;
+            white-space: nowrap;
+            vertical-align: middle;
+            z-index: 0;
+            font-weight: 700;
+        }
+
+        .rating-mark{
+            display:inline-block;
+        }
+
+}

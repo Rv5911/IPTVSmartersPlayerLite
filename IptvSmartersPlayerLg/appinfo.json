@@ -1,0 +1,12 @@
+{
+  "id": "com.iptvsmartersplayer.app",
+  "version": "1.0.0",
+  "vendor": "My Company",
+  "type": "web",
+  "main": "index.html",
+  "title": "IPTV Smarters Player",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+     "resolution": "1920x1080",
+    "disableBackHistoryAPI" : true
+}

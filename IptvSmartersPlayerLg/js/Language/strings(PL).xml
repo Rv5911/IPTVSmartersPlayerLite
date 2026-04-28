@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+
+    <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">FLIX IPTV</string>
+
+    <string name="featured_live_tv">Ulubiona telewizja na żywo</string>
+
+    <string name="featured_movies">Polecane filmy</string>
+
+    <string name="featured_series">Wyróżniona seria</string>
+
+    <string name="user_name">Nazwa Użytkownika</string>
+
+    <string name="password">Hasło</string>
+
+    <string name="no_internet">Nie wykryto połączenia internetowego Upewnij się, że urządzenie jest połączone z Internetem</string>
+
+    <string name="retry">SPRÓBOWAĆ PONOWNIE</string>
+
+    <string name="more_help">WIĘCEJ POMOCY</string>
+
+    <string name="step_1">Krok-1)</string>
+
+    <string name="unplug">Odłącz przewód zasilający od modemu internetowego, odczekaj 60 sekund, a następnie podłącz go ponownie i zaczekaj do 5 minut. Następnie wyłącz i włącz odbiornik, aby spróbować połączyć się ponownie.</string>
+
+    <string name="step_2">Krok-2)</string>
+
+    <string name="check_wifi">Tylko jeśli korzystasz z połączenia bezprzewodowego, sprawdź ustawienia Wi-Fi w odbiorniku (STB), naciskając przycisk SETUP na pilocie i upewnij się, że połączenie Wi-Fi jest prawidłowe. Następnie wyłącz i włącz odbiornik, aby spróbować połączyć się ponownie.</string>
+
+    <string name="step_3">Krok-3)</string>
+
+    <string name="contact">Skontaktuj się z dostawcą Internetu, aby uzyskać dalszą pomoc.</string>
+
+    <string name="step_4">Krok-4)</string>
+
+    <string name="still">) Jeśli nadal masz problemy nawet po skontaktowaniu się z dostawcą Internetu, możesz skontaktować się ze sprzedawcą w celu dalszego rozwiązania problemu.</string>
+
+    <string name="this_is_test_description">to jest opis testu</string>
+
+    <string name="cheap">Tani</string>
+
+    <string name="sorry_but_there_is_a_problem_with_the_broadcast_source">Przepraszamy, ale wystąpił problem ze źródłem transmisji</string>
+
+    <string name="tv_guide">program telewizyjny</string>
+
+    <string name="update_data">Aktualizować dane....</string>
+
+    <string name="download">ŚCIĄGNIJ</string>
+
+    <string name="request_download">Pobieranie najnowszej wersji.</string>
+
+    <string name="enter_series_name_to_search">Wpisz nazwę serii do wyszukania</string>
+
+    <string name="go">Szukaj</string>
+
+    <string name="enter_movie_name_to_search">Wpisz nazwę filmu do wyszukania</string>
+
+    <string name="series">Seria</string>
+
+    <string name="genre">Gatunek muzyczny: </string>
+
+    <string name="plot">Wątek:</string>
+
+    <string name="cast">Odlew:</string>
+
+    <string name="rating">Ocena:</string>
+
+    <string name="director">Dyrektor:</string>
+
+    <string name="publish_date">Data publikacji:</string>
+
+    <string name="clear_all">Zaznacz wszystko</string>
+
+    <string name="select_categories_you_want_to_hide">Wybierz kategorie, które chcesz ukryć</string>
+
+    <string name="ok">dobrze</string>
+
+    <string name="select_all">Zaznacz wszystko</string>
+
+    <string name="ignore">ignorować</string>
+
+    <string name="cancel">Anuluj</string>
+
+    <!--VPN-->
+
+
+    <string name="back">Plecy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="watch_trailer">Oglądać zwiastun</string>
+
+    <string name="watch_movie">Oglądać film</string>
+
+    <string name="add_to_favorite">Dodaj do ulubionych</string>
+
+    <string name="remove_favorites">Usuń ulubione</string>
+
+    <string name="login">Zaloguj sie</string>
+
+    <string name="here">Kliknij tutaj</string>
+
+    <string name="vpn">VPN</string>
+
+    <string name="catch_up">Dogonić</string>
+
+    <string name="search">Szukaj</string>
+
+    <string name="overview">Przegląd</string>
+
+    <string name="season">Pora roku</string>
+
+    <string name="refresh">Odświeżać</string>
+
+    <string name="default_Category">Wszystko</string>
+
+    <string name="no_information">Brak informacji</string>
+
+    <string name="movies">Kino</string>
+
+    <string name="sports_guide">Przewodnik sportowy</string>
+
+    <string name="download_epg">Pobierz EPG</string>
+
+    <string name="settings">Ustawienia</string>
+
+    <string name="refresh_playlist">odśwież listę odtwarzania</string>
+
+    <string name="live_tv">Telewizja na żywo</string>
+
+    <string name="favorite">Ulubiony</string>
+
+    <string name="change_playlist">Zmień listę odtwarzania</string>
+
+    <string name="parent_control">Kontrola rodzicielska</string>
+
+    <string name="external_player">Wybierz Zewnętrzne odtwarzacze</string>
+
+    <string name="hide_live_category">Ukryj kategorie na żywo</string>
+
+    <string name="hide_vod_category">Ukryj kategorie Vod</string>
+
+    <string name="hide_series_category">Ukryj kategorie seriali</string>
+
+    <string name="user_account">Konto użytkownika</string>
+
+    <string name="change_theme">Zmień motyw</string>
+
+    <string name="time_format">Format czasu</string>
+
+    <string name="live_sort">Sortowanie kanałów na żywo</string>
+
+    <string name="screen_ratio">Współczynnik ekranu</string>
+
+    <string name="subtitle">Podtytuł</string>
+
+    <string name="audio_track">Ścieżka dźwiękowa</string>
+
+    <string name="audio_delay">Opóźnienie dźwięku</string>
+
+    <string name="no_channels">Brak kanałów</string>
+
+    <string name="no_movies">Brak filmów</string>
+
+    <string name="no_series">Brak serii</string>
+
+    <string name="epg_downloaded">Pobrano Epg.</string>
+
+    <string name="pin_incorrect">Twój kod PIN był nieprawidłowy. Proszę spróbuj ponownie</string>
+
+    <string name="exit_app">CHCESZ WYJŚĆ Z APLIKACJI?</string>
+
+    <string name="no">Nie</string>
+
+    <string name="switch_server">CHCESZ WYJŚĆ Z APLIKACJI LUB PRZEŁĄCZYĆ SERWER?</string>
+
+    <string name="exit">WYJŚCIE</string>
+
+    <string name="select_theme">Wybierz motyw</string>
+
+    <string name="select_playlist">Wybierz Playlistę</string>
+
+    <string name="select_live_sort">Wybierz opcję Sortowanie kanałów na żywo</string>
+
+    <string name="string_default">Domyślna</string>
+
+    <string name="sort_a_z">Zamów przez A-Z</string>
+
+    <string name="sort_z_a">Zamów przez Z-A</string>
+
+    <string name="disable">Wyłączyć</string>
+
+    <string name="mx_player">MX gracz </string>
+
+    <string name="vlc_player">Vlc gracz</string>
+
+    <string name="install_external_player">Zainstaluj odtwarzacz zewnętrzny</string>
+
+    <string name="want_external_player">Czy chcesz zainstalować ten odtwarzacz?</string>
+
+    <string name="no_audio">Brak ścieżek dźwiękowych lub jeszcze się nie ładuje</string>
+
+    <string name="no_subtitle">Brak napisów lub jeszcze się nie ładuje</string>
+
+    <string name="removed_movie">Ten film został usunięty z ulubionych.</string>
+
+    <string name="added_movie">Ten film został dodany do ulubionych.</string>
+
+    <string name="no_trailer">Ten film nie ma zwiastuna</string>
+
+    <string name="order_by_number">Zamów według numeru</string>
+
+    <string name="order_by_added">Zamów przez Dodane</string>
+
+    <string name="order_by_genre">Zamów według gatunku</string>
+
+    <string name="order_by_rating">Sortuj według oceny</string>
+
+    <string name="no_episode">Brak odcinków</string>
+
+    <string name="watch_season">Obejrzyj sezon</string>
+
+    <string name="add_correct_alert">dodaj poprawną listę odtwarzania m3u</string>
+
+    <string name="user_incorrect">Nazwa użytkownika jest nieprawidłowa</string>
+
+    <string name="account_expired">Twoje konto wygasło.</string>
+
+    <string name="network_error">Błąd sieci</string>
+
+    <string name="trial_ended">Twój dzień próbny dobiegł końca, wypróbuj płatny plan za</string>
+
+    <string name="account_ended">\" Ważność Twojego konta dobiegła końca, spróbuj przedłużyć datę wygaśnięcia za\"</string>
+
+    <string name="trial_be_ended">\" Twój dzień próbny zakończy się za \"</string>
+
+    <string name="pls_paid">\" wypróbuj płatny plan w\"</string>
+
+    <string name="mac_not_registered">Twój adres Mac nie jest jeszcze zarejestrowany. -Możesz aktywować swój adres Mac i wypróbować 7-dniowy bezpłatny okres próbny w</string>
+
+    <string name="demo_days">-Możesz spróbować użyć naszego adresu URL listy odtwarzania demonstracyjnej bez rejestrowania adresu URL listy odtwarzania.Adres URL wersji demonstracyjnej będzie ważny przez 7 dni od pierwszego zalogowania.</string>
+
+    <string name="release_date">Data wydania:</string>
+
+    <string name="age">Wiek:</string>
+
+    <string name="length">Długość:</string>
+
+    <string name="trailer">Zwiastun filmu</string>
+
+    <string name="play">Grać</string>
+
+    <string name="select_menu">Wybierz opcję menu</string>
+
+    <string name="parent_pass">Hasło:</string>
+
+    <string name="net_pass">nowe hasło:</string>
+
+    <string name="confirm_password">Potwierdź hasło:</string>
+
+    <string name="reload_portal">Załaduj ponownie portal</string>
+
+    <string name="would_you_like_to_reload_portal">Chcesz przeładować portal?</string>
+
+    <string name="_12_hour_format">Format 12-godzinny</string>
+
+    <string name="_24_hour_format">Format 24-godzinny</string>
+
+    <string name="new_software_update_available">Dostępna nowa aktualizacja oprogramowania</string>
+
+    <string name="skip">POMINĄĆ</string>
+
+    <string name="update_now">AKTUALIZUJ TERAZ</string>
+
+    <string name="change_language">Zmień język</string>
+
+    <string name="english">język angielski</string>
+
+    <string name="german">Niemiecki</string>
+
+    <string name="chinese">chiński</string>
+
+    <string name="turkish">Turkey</string>
+
+    <string name="french">Francuski</string>
+
+    <string name="italian">Włoski</string>
+
+    <string name="player_option">opcja gracza</string>
+    <string name="arab">arabia</string>
+    <string name="greece">"Kreikka "</string>
+    <string name="bulgarian">Bulgarian</string>
+    <string name="hindu">Hindu</string>
+    <string name="netherlands">Netherlands</string>
+    <string name="slovakia">Slovakia</string>
+    <string name="spain">Spain</string>
+    <string name="portugal">Portugal</string>
+    <string name="slovenia">Slovenia</string>
+    <string name="ukraine">Ukraine</string>
+    <string name="poland">Poland</string>
+
+</resources>

@@ -1,0 +1,70 @@
+#user-account-page{
+    /*background-image: url("../images/account_background.jpg");*/
+    overflow-y:hidden;
+    background-size: 100% 100%;
+}
+#user-account-container{
+    position: fixed;
+    left: 30%;
+    top: 20%;
+}
+#user-account-container *{
+    font-weight: normal;
+}
+#user-account-contents-container {
+    padding: 30px 50px;
+    background: #181E30;
+}
+#user-account-title{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#user-account-status{
+    background: #0CDC78;
+    width: fit-content;
+    padding: 2px 15px;
+    border-radius: 2px;
+}
+.user-account-item-wrapper {
+    color: #fff;
+    font-size: 25px;
+    width: 700px;
+    white-space: nowrap;
+    padding:8px;
+}
+.user-account-item-label {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+}
+.user-account-item-value {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+#user-account-btns-container {
+    margin-top: 20px;
+    white-space: nowrap;
+}
+.user-account-btn-wrapper {
+    width: 50%;
+    vertical-align: middle;
+    color: #fff;
+    display: inline-block;
+    padding: 0 5px;
+}
+.user-account-btn {
+    font-size: 30px;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: all 0.1s;
+}
+.user-account-btn-wrapper:nth-child(2) .user-account-btn:hover,
+.user-account-btn-wrapper:nth-child(2) .user-account-btn.active{
+    background: linear-gradient(80deg,#F04055 5%, #E78134 100%);
+}
+
+
+

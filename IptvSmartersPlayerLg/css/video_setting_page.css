@@ -1,0 +1,193 @@
+#video-settings-page{
+    position: fixed;
+    right: 0;
+    top:0;
+    width: 0;
+    overflow-x: hidden;
+    border-radius: 5px;
+    z-index:40;
+    background:rgba(0,0,0,0.8);
+    transition:all 0.5s;
+    height: 100vh;
+    white-space: nowrap;
+
+}
+#video-settings-page.expanded{
+    width: 700px;
+}
+#video-setting-page-title-container {
+    font-size: 45px;
+    padding: 40px 40px;
+    font-weight: normal;
+    border-bottom: 2px solid #ddd;
+}
+#video-setting-page-back-btn img {
+    width: 70px;
+}
+#video-settings-contents-wrapper {
+    overflow-y: scroll;
+    position: relative;
+    height: 910px;
+    padding: 0 40px;
+}
+.video-setting-title{
+    font-size:35px;
+    color: #fff;
+    padding:10px 0;
+    font-weight: bold;
+}
+#video-setting-page-back-btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.5s;
+}
+#video-setting-page-back-btn.active{
+    background: #654E53;
+}
+#video-setting-page-back-btn img {
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+#video-setting-page-title {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+}
+.video-setting-items-container{
+    padding: 0 5px;
+    font-size:30px;
+}
+.video-setting-item{
+    padding:10px 20px;
+    border:3px solid transparent;
+}
+.video-setting-item.active{
+    border-color:#f3a903 ;
+}
+.video-setting-item-msg {
+    text-align: center;
+    margin: 10px auto;
+}
+#subtitle-setting{
+
+}
+.subtitle-setting-label {
+    margin-right: 40px;
+}
+
+.video-setting-item label{
+    font-size: 28px;
+    margin-bottom:0;
+}
+.video-setting-item label:before{
+    top: 6px;
+    width: 32px;
+    height: 32px;
+    border-color: #fff;
+    border-width: 3px;
+}
+.video-setting-item label:after {
+    top: 14px;
+    left: 8px;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+}
+.video-setting-item .magic-radio:checked + label:before {
+    border: 3px solid #fff;
+}
+
+#video-subtitle-font-setting-container{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top:0;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.86);
+    display: none;
+    z-index: 40;
+}
+#video-subtitle-setting-title{
+    font-size: 35px;
+    font-weight: bolder;
+    color: #222;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+#video-subtitle-font-setting-content-wrapper{
+    background: #fff;
+    border-radius: 5px;
+    margin: 100px auto;
+    width: 60vw;
+}
+#video-subtitle-font-setting-items-container {
+    max-height: 800px;
+    overflow-y: scroll;
+    position: relative;
+}
+.subtitle-font-setting-item {
+    font-size: 25px;
+    padding: 10px;
+    font-weight: bold;
+    background-clip: padding-box;
+    color: #111;
+    transition: all 0.3s;
+}
+.subtitle-font-setting-item.active {
+    background: #4897da;
+    color: #fff;
+}
+.subtitle-font-setting-item label{
+    margin-bottom: 0;
+}
+.subtitle-font-setting-item label:before{
+    border-color: #999 !important;
+    border-width: 3px;
+    margin-bottom: 0;
+    top:9px;
+    animation: unset !important;
+}
+.subtitle-font-setting-item label:after{
+    background: #999;
+    top:17px;
+}
+.subtitle-font-setting-item.active label:before{
+    border-color: #fff !important;
+}
+.subtitle-font-setting-item.active label:after{
+    background: #fff;
+}
+.subtitle-setting-icon{
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.video-setting-icon {
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.video-setting-icon-wrapper {
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    vertical-align: middle;
+}
+.video-setting-title-text {
+    display: inline-block;
+    vertical-align: middle;
+}

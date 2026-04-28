@@ -1,0 +1,781 @@
+@media only screen and (max-width: 1680px) {
+    #list-user-page {
+        padding: 0px 80px;
+    }
+    #list-user-page-title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    #list-user-items-container {
+        position: relative;
+        height: 900px;
+        overflow-y: scroll;
+            float: left;
+            width: 100%;
+    }
+    #list-user-add-icon {
+        color: #111;
+        background: #fff;
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 65px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 75px;
+        font-weight: lighter;
+    }
+    .empty-user-add-btn-wrapper {
+        position: absolute;
+        left: 38%;
+         top: 33%;
+        text-align: center;
+        border:5px solid transparent;
+        padding: 20px 40px;
+        border-radius: 10px;
+        transition: all 0.2s;
+    }
+    .empty-user-add-btn-wrapper.active{
+        border-color: #FC8210;
+    }
+    .empty-user-add-btn-icon {
+        width: 120px;
+        height: 120px;
+        text-align: center;
+        background: #fff;
+        border-radius: 50%;
+        color: #111;
+        font-size: 85px;
+        font-weight: lighter;
+        line-height: 125px;
+        margin: 0 auto;
+    }
+    .empty-user-add-btn-title {
+        font-size: 40px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    #list-user-add-title {
+        font-size: 40px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    .playlist-item-container {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+        padding: 5px 10px;
+    }
+    .playlist-item-wrapper {
+        background: #fff;
+        color: #111;
+        border-radius: 15px;
+        white-space: nowrap;
+        padding:10px;
+        border:5px solid transparent;
+        transition: all 0.2s;
+        background-clip: padding-box;
+    }
+    .playlist-item-wrapper.active, #list-user-top-menu-btn.active{
+        border-color: #FC8210;
+    }
+    #list-user-top-menu-btn {
+        border-width: 5px;
+        background-clip: padding-box;
+    }
+
+    .playlist-item-icon-wrapper {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100px;
+        height: 100px;
+        background: #ccc;
+        padding: 20px;
+    }
+    .playlist-item-icon {
+        width: 100%;
+        height: 100%;
+    }
+    .playlist-item-info-container {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+    }
+    .playlist-item-name {
+        font-size: 30px;
+        color: #111;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .playlist-item-detail-info-wrapper {
+        font-size: 22px;
+        font-weight: normal;
+    }
+    #list-user-bottom-items-container{
+        position: fixed;
+        bottom:10px;
+        text-align: center;
+        left:0;
+        width: 100%;
+    }
+    .bottom-item-container{
+        font-size: 22px;
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .bottom-item-symbol{
+        width: 30px;
+        height: 20px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .bottom-item-title{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left:10px;
+    }
+    #delete-modal-title-container {
+        color: #111;
+        font-size: 40px;
+        padding: 20px;
+        border-bottom: 2px solid #111;
+    }
+    #delete-user-modal .modal-text-1 {
+        color: #444;
+        font-size: 27px;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+    #delete-user-modal .modal-button-wrapper{
+        padding:20px;
+    }
+    .delete-user-btn {
+        width: 150px;
+        font-size: 25px;
+    }
+    #edit-modal-title-container {
+        font-size: 40px;
+        color: #111;
+        padding: 20px;
+        border-bottom: 2px solid #111;
+    }
+    #edit-modal-title-icon{
+        font-size: 30px;
+        color: #0000ff;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #edit-user-items-container {
+        padding: 30px;
+        padding-top:0;
+    }
+    input.edit-user-item {
+        display: block;
+    }
+    input.edit-user-item {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 25px;
+        background: #B8C3CF;
+        padding: 10px 10px;
+        outline: none;
+        border: 3px solid transparent;
+        transition: all 0.3s;
+    }
+    input.edit-user-item.active {
+        border-color: #111;
+    }
+    #edit-user-modal .modal-button-wrapper{
+        margin-top:20px;
+    }
+    button.edit-user-item {
+        background: #111;
+        color: #fff !important;
+        font-weight: normal;
+        width: 250px;
+        font-size: 30px;
+        padding: 5px;
+    }
+    button.edit-user-item.active{
+        background: #5d75ea;
+    }
+
+    #xtreme-user-page{
+        position:relative;
+        background-image: url("../images/splash-background.jpg");
+        background-size: 100% 100%;
+        overflow:hidden;
+    }
+    #xtreme-user-page-contents-container {
+        width: 80%;
+        margin: 75px auto;
+        white-space: nowrap;
+    }
+    #xtreme-user-page-logo-container {
+        display: inline-block;
+        width: 40%;
+        vertical-align: middle;
+    }
+    #xtreme-user-detail-container {
+        display: inline-block;
+        width: 60%;
+        vertical-align: middle;
+    }
+    #xtreme-user-detail-title {
+        text-align: center;
+        font-size: 34px;
+        color: #fff;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    .xtreme-user-page-input-wrapper{
+        height: 80px;
+        margin-bottom: 15px;
+        border:4px solid #fff;
+        background-clip: padding-box;
+    }
+    #password-container{
+        height: 80px;
+        margin:0;
+        font-size:0;
+        margin-bottom: 20px;
+    }
+
+    .xtreme-user-page-input {
+        height: 100%;
+        width: 100%;
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 5px;
+        outline:none !important;
+        border: 2px solid white;
+        background: #C99FC3;
+    }
+    .xtreme-user-menu-item{
+        border: 4px solid transparent;
+        transition: all 0.05s;
+    }
+    .xtreme-user-menu-item:hover, .xtreme-user-menu-item.active{
+        background: #B896AE;
+        box-shadow: 0 0 8px 8px #ffffff;
+    }
+    .password-input-wrapper{
+        width: 80%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+    }
+    #password{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .password-icon-container {
+        display: inline-block;
+        width: 20%;
+        vertical-align: middle;
+        height: 100%;
+        padding-left: 10px;
+    }
+    .password-icon-wrapper {
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.61);
+        height: 100%;
+        position: relative;
+        border-radius: 5px;
+        border:4px solid #fff;
+    }
+    .password-icon-wrapper i{
+        position: absolute;
+        top:25%;
+        left:33%;
+    }
+    #list-users-btn{
+        height: 90px;
+        width: 257px;
+        margin-left: 6%;
+        padding: 23px;
+        margin-top: 14%;
+        background:#fff;
+        font-size: 25px;
+        transition: all 0.03s;
+        border-radius: 5px;
+    }
+    #list-users-btn img{
+        width: 36px;
+        display: inline-block;
+        margin-top: -6px;
+        margin-left: 4px;
+        margin-right: 15px;
+    }
+    .list_user_txt{
+        color: #000;
+    }
+    #login-btn {
+        height: 90px;
+        background: #fff;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 5px;
+        position: relative;
+        margin-top:10px;
+        border: none;
+    }
+    #login-btn-text {
+
+            font-size: 35px;
+            color: #222;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 18%;
+    }
+    #login-btn.active #login-btn-text{
+        color: #fff;
+    }
+    #list-users-btn.active,#list-users-btn:hover,
+    #login-btn.active,#login-btn:hover
+    {
+        background: url(../images/button_back.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .xtreme-user-input-error{
+        display: none;
+        font-size: 25px;
+        color: #ff7c07;
+        font-weight: normal;
+        margin-top:-20px;
+        margin-bottom: 20px;
+    }
+
+    #xtreme-user-login-error-msg {
+        margin-top: 20px;
+        text-align: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        background: #c3bebeb5;
+        font-size: 30px;
+        font-weight: normal;
+        padding: 10px 20px;
+        border-radius: 3px;
+        color: #333;
+        visibility: hidden;
+        transition: all 0.3s;
+    }
+    #xtreme-user-login-error-msg.error{
+        visibility: visible;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1680px) {
+
+    #list-user-page {
+        padding: 0px 80px;
+    }
+    #list-user-page-title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    #list-user-items-container {
+        position: relative;
+        height: 900px;
+        overflow-y: scroll;
+            float: left;
+            width: 100%;
+    }
+    #list-user-add-icon {
+        color: #111;
+        background: #fff;
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 65px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 75px;
+        font-weight: lighter;
+    }
+    .empty-user-add-btn-wrapper {
+        position: absolute;
+        left: 38%;
+         top: 33%;
+        text-align: center;
+        border:5px solid transparent;
+        padding: 20px 40px;
+        border-radius: 10px;
+        transition: all 0.2s;
+    }
+    .empty-user-add-btn-wrapper.active{
+        border-color: #FC8210;
+    }
+    .empty-user-add-btn-icon {
+        width: 120px;
+        height: 120px;
+        text-align: center;
+        background: #fff;
+        border-radius: 50%;
+        color: #111;
+        font-size: 85px;
+        font-weight: lighter;
+        line-height: 125px;
+        margin: 0 auto;
+    }
+    .empty-user-add-btn-title {
+        font-size: 40px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    #list-user-add-title {
+        font-size: 40px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    .playlist-item-container {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+        padding: 5px 10px;
+    }
+    .playlist-item-wrapper {
+        background: #fff;
+        color: #111;
+        border-radius: 15px;
+        white-space: nowrap;
+        padding:10px;
+        border:5px solid transparent;
+        transition: all 0.2s;
+        background-clip: padding-box;
+    }
+    .playlist-item-wrapper.active, #list-user-top-menu-btn.active{
+        border-color: #FC8210;
+    }
+    #list-user-top-menu-btn {
+        border-width: 5px;
+        background-clip: padding-box;
+    }
+
+    .playlist-item-icon-wrapper {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100px;
+        height: 100px;
+        background: #ccc;
+        padding: 20px;
+    }
+    .playlist-item-icon {
+        width: 100%;
+        height: 100%;
+    }
+    .playlist-item-info-container {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+    }
+    .playlist-item-name {
+        font-size: 30px;
+        color: #111;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .playlist-item-detail-info-wrapper {
+        font-size: 22px;
+        font-weight: normal;
+    }
+    #list-user-bottom-items-container{
+        position: fixed;
+        bottom:10px;
+        text-align: center;
+        left:0;
+        width: 100%;
+    }
+    .bottom-item-container{
+        font-size: 22px;
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .bottom-item-symbol{
+        width: 30px;
+        height: 20px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .bottom-item-title{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left:10px;
+    }
+    #delete-modal-title-container {
+        color: #111;
+        font-size: 40px;
+        padding: 20px;
+        border-bottom: 2px solid #111;
+    }
+    #delete-user-modal .modal-text-1 {
+        color: #444;
+        font-size: 27px;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+    #delete-user-modal .modal-button-wrapper{
+        padding:20px;
+    }
+    .delete-user-btn {
+        width: 150px;
+        font-size: 25px;
+    }
+    #edit-modal-title-container {
+        font-size: 40px;
+        color: #111;
+        padding: 20px;
+        border-bottom: 2px solid #111;
+    }
+    #edit-modal-title-icon{
+        font-size: 30px;
+        color: #0000ff;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #edit-user-items-container {
+        padding: 30px;
+        padding-top:0;
+    }
+    input.edit-user-item {
+        display: block;
+    }
+    input.edit-user-item {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 25px;
+        background: #B8C3CF;
+        padding: 10px 10px;
+        outline: none;
+        border: 3px solid transparent;
+        transition: all 0.3s;
+    }
+    input.edit-user-item.active {
+        border-color: #111;
+    }
+    #edit-user-modal .modal-button-wrapper{
+        margin-top:20px;
+    }
+    button.edit-user-item {
+        background: #111;
+        color: #fff !important;
+        font-weight: normal;
+        width: 250px;
+        font-size: 30px;
+        padding: 5px;
+    }
+    button.edit-user-item.active{
+        background: #5d75ea;
+    }
+
+    #xtreme-user-page{
+        position:relative;
+        background-image: url("../images/splash-background.jpg");
+        background-size: 100% 100%;
+        overflow:hidden;
+    }
+    #xtreme-user-page-contents-container {
+        width: 70%;
+        margin: 200px auto;
+        white-space: nowrap;
+    }
+    #xtreme-user-page-logo-container {
+        display: inline-block;
+        width: 40%;
+        vertical-align: middle;
+    }
+    #xtreme-user-detail-container {
+        display: inline-block;
+        width: 60%;
+        vertical-align: middle;
+    }
+    #xtreme-user-detail-title {
+        text-align: center;
+        font-size: 40px;
+        color: #fff;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    .xtreme-user-page-input-wrapper{
+        height: 93px;
+        margin-bottom: 20px;
+        border:4px solid #fff;
+        background-clip: padding-box;
+    }
+    #password-container{
+        height: 93px;
+        margin:0;
+        font-size:0;
+        margin-bottom: 20px;
+    }
+
+    .xtreme-user-page-input {
+        height: 100%;
+        width: 100%;
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 5px;
+        outline:none !important;
+        border: 2px solid white;
+        background: #C99FC3;
+    }
+    .xtreme-user-menu-item{
+        border: 4px solid transparent;
+        transition: all 0.05s;
+    }
+    .xtreme-user-menu-item:hover, .xtreme-user-menu-item.active{
+        background: #B896AE;
+        box-shadow: 0 0 8px 8px #ffffff;
+    }
+    .password-input-wrapper{
+        width: 80%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+    }
+    #password{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .password-icon-container {
+        display: inline-block;
+        width: 20%;
+        vertical-align: middle;
+        height: 100%;
+        padding-left: 10px;
+    }
+    .password-icon-wrapper {
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.61);
+        height: 100%;
+        position: relative;
+        border-radius: 5px;
+        border:4px solid #fff;
+    }
+    .password-icon-wrapper i{
+        position: absolute;
+        top:25%;
+        left:33%;
+
+    }
+    #list-users-btn{
+        height: 85px;
+        width: 257px;
+        margin-left: 14%;
+        padding: 26px;
+        margin-top: 11%;
+        background:#fff;
+        font-size: 25px;
+        transition: all 0.03s;
+        border-radius: 5px;
+
+
+    }
+    #list-users-btn img{
+        width: 36px;
+        display: inline-block;
+        margin-top: -6px;
+        margin-left: 4px;
+        margin-right: 15px;
+    }
+    .list_user_txt{
+        color: #000;
+    }
+    #login-btn {
+        height: 93px;
+        background: #fff;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 5px;
+        position: relative;
+        margin-top:10px;
+        border: none;
+    }
+    #login-btn-text {
+
+            font-size: 35px;
+            color: #222;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 18%;
+    }
+    #login-btn.active #login-btn-text{
+        color: #fff;
+    }
+    #list-users-btn.active,#list-users-btn:hover,
+    #login-btn.active,#login-btn:hover
+    {
+        background: url(../images/button_back.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .xtreme-user-input-error{
+        display: none;
+        font-size: 25px;
+        color: #ff7c07;
+        font-weight: normal;
+        margin-top:-20px;
+        margin-bottom: 20px;
+    }
+
+    #xtreme-user-login-error-msg {
+        margin-top: 20px;
+        text-align: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        background: #c3bebeb5;
+        font-size: 30px;
+        font-weight: normal;
+        padding: 10px 20px;
+        border-radius: 3px;
+        color: #333;
+        visibility: hidden;
+        transition: all 0.3s;
+    }
+    #xtreme-user-login-error-msg.error{
+        visibility: visible;
+    }
+
+
+}
+.xtreme-user-page-input:-ms-input-placeholder {
+  color: #ffffffcc!important;
+}
+.xtreme-user-page-input::-webkit-input-placeholder {
+  color: #ffffffcc!important;
+}

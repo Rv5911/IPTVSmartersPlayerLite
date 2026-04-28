@@ -1,0 +1,11 @@
+#episode-page{
+    padding: 50px;
+}
+#episode-page-movies-container{
+    font-size:0;
+    position: relative;
+    height: 890px;
+    overflow-y: scroll;
+}
+
+

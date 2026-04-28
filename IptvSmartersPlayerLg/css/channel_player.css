@@ -1,0 +1,84 @@
+#channel-player-video{
+    left:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+}
+#channel-video-title{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    padding:20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+.full-screen-progress-logo-container {
+    white-space: nowrap;
+    margin: 10px 0;
+}
+.full-screen-logo-container {
+    display: inline-block;
+    width: 7%;
+    vertical-align: middle;
+    text-align: center;
+    height: 70px;
+}
+.full-screen-logo{
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.full-screen-progress-container {
+    display: inline-block;
+    width: 93%;
+    vertical-align: middle;
+    padding-left:20px;
+}
+
+.full-screen-programme-name-time-container{
+    white-space: nowrap;
+    font-size: 32px;
+    color: #fff;
+}
+.full-screen-programme-name {
+    font-weight: normal;
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+}
+.full-screen-programme-time{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    width: 30%;
+    text-align: right;
+}
+.full-screen-progress-bar{
+    height: 7px;
+    overflow: hidden;
+    background-color: rgba(76, 74, 74, 0.72);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.full-screen-progress-bar span{
+    display: block;
+    background: #FFBE1D;
+    height:100%;
+    width:0;
+}
+.full-screen-information{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:0 100px;
+    display: none;
+    z-index:30
+}

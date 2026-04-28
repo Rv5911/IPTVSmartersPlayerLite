@@ -1,0 +1,44 @@
+#seasons-page {
+    padding: 50px;
+}
+#season-page-items-container {
+    width: 100%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 770px;
+    font-size:0;
+    position: relative;
+    overflow-y: scroll;
+}
+
+
+.season-item-icon {
+    margin-right: 30px;
+    vertical-align: middle;
+    margin-left:10px;
+}
+.season-item-icon img{
+    height: 40px;
+}
+.season-item-name {
+    width: 680px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 25px;
+    vertical-align: middle;
+}
+.season-item-stream-count {
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 65px;
+    text-align: right;
+}
+.season-item-count-icon{
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -5px;
+}
