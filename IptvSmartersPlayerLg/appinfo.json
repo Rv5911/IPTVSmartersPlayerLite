@@ -9,5 +9,5 @@
   "largeIcon": "laucher_icon.png",
      "resolution": "1920x1080",
     "disableBackHistoryAPI" : true,
-       "splashBackground": "splash-screen.jpg"
+       "splashBackground": "splash-screen.png"
 }
