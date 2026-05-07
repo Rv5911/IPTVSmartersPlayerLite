@@ -5,8 +5,9 @@
   "type": "web",
   "main": "index.html",
   "title": "IPTV Smarters Player",
-  "icon": "icon.png",
-  "largeIcon": "largeIcon.png",
+  "icon": "laucher_icon.png",
+  "largeIcon": "laucher_icon.png",
      "resolution": "1920x1080",
-    "disableBackHistoryAPI" : true
+    "disableBackHistoryAPI" : true,
+       "splashBackground": "splash-screen.jpg"
 }

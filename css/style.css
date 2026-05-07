@@ -3076,7 +3076,7 @@
 }
 
 .dns-dialog-title {
-    font-size: 32px;
+    font-size: 50px;
     font-weight: bold;
     margin: 0 0 15px 0;
 }
@@ -3098,7 +3098,7 @@
 .dns-website-or {
     font-size: 20px;
     margin: 10px 0;
-    color: #aaa;
+    color: white;
 }
 
 .dns-website-link {
